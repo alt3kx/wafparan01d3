@@ -3,7 +3,7 @@
 <h1 align="center">
   <a href="https://github.com/alt3kx/wafparanoid/"><img src="https://user-images.githubusercontent.com/3140111/142721218-469e835e-cb27-4f17-913a-7aeb0665f905.png" alt="wafparanoid" width="500" height="500"></a>
   <br>
-  WAFPARANOID
+  WAFPARANO1D
 </h1>
 <p align="center">
   <b>The Web Application Firewall Paranoia Level Test Tool.</b>
@@ -85,27 +85,30 @@ alex@ubuntu:~$ `</br>
 5. Edit your Apache security2.conf file to ensure it’ll load ModSecurity rules:  </br>
 `$ vim /etc/apache2/mods-enabled/security2.conf` <-- where is this file ? 
 
-`       IncludeOptional /etc/modsecurity/crs-setup.conf
+```     IncludeOptional /etc/modsecurity/crs-setup.conf
         IncludeOptional /etc/modsecurity/rules/*.conf
 
         # Include OWASP ModSecurity CRS rules if installed
         #IncludeOptional /usr/share/modsecurity-crs/*.load `
-
+```
 6. Ensure both the default ModSecurity and new CRS configuration files are listed. The first line conf file path may already be included. 
 The second file path should be wherever you moved the /rules directory.  </br>
 7. Edit /etc/apache2/apache2.conf  </br>
 `$ vim /etc/apache2/apache2.conf`
 
-`       Include /etc/modsecurity/modsecurity.conf
+```     Include /etc/modsecurity/modsecurity.conf
         Include /etc/modsecurity/crs/crs-setup.conf
         Include /etc/modsecurity/crs/rules/*.conf `
+```
 
 #### Apache Load Modules Rewrite & Proxy
 1. Copy the following modules. Enable Proxy and Rewrite module.  </br>
-` $ /etc/apache2
+``` 
+$ /etc/apache2
 $ cp mods-available/proxy_http.load mods-enabled
 $ cp mods-available/proxy.load mods-enabled/
-$ cp mods-available/rewrite.load mods-enabled/` 
+$ cp mods-available/rewrite.load mods-enabled/
+```
 
 2. Restart Apache </br>
 `$ sudo systemctl restart apache2`
@@ -114,13 +117,16 @@ $ cp mods-available/rewrite.load mods-enabled/`
 1. Add ports </br>
 Edit `/etc/apache2/ports.conf`, add the following lines:
 
-`Listen 8080
-Listen 18080`
+```
+Listen 8080
+Listen 18080
+```
 
 2. Go to /etc/apache2/sites-enabled, create the file 001-test.conf </br>
 Copy & Paste the following code. </br>
 
-`<VirtualHost *:8080>
+```     
+<VirtualHost *:8080>
         ServerName test.domain:8080
 
         SecRuleEngine On
@@ -132,11 +138,12 @@ Copy & Paste the following code. </br>
         ProxyPass / http://127.0.0.1:18080/
         ProxyPassReverse / http://127.0.0.1:18080/
 </VirtualHost>
-`
+```
+
 3. Go to /etc/apache2/sites-enabled, create the file 002-moc.conf </br>
 Copy & Paste the following code.</br>
 
-`
+```
 <VirtualHost 127.0.0.1:18080>
 
         ErrorLog ${APACHE_LOG_DIR}/moc_error.log
@@ -145,7 +152,7 @@ Copy & Paste the following code.</br>
         RewriteEngine On
         RewriteRule ^(.*)$ $1 [R=200,L]
 </VirtualHost>
-`
+```
 
 4. Restart apache </br>
 $ sudo systemctl restart apache2 </br>
