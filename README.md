@@ -18,8 +18,9 @@ The `wafparanoid.sh` bash script takes malicious requests using encoded payloads
 `Blueteamers`: Rule enforcement, best alerting , less false positive/negative results in your organization. </br>
 `Integrators`: Define the adequate level of WAF paranoid quickly customizing rules or creating virtal patches. </br>
 
-### Proof of Concept: Based on Ubuntu Linux Box 
+### Proof of Concept: Based on Ubuntu 20.04.3 and CRS 3.3.0 
 Reference: https://www.inmotionhosting.com/support/server/apache/install-modsecurity-apache-module/ </br>
 
-#### Install Ubuntu Linux 
-
+#### Install Ubuntu Linux
+1. Download ISO and install by default toptions
+https://ubuntu.com/download/desktop/thank-you?version=20.04.3&architecture=amd64
