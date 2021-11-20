@@ -69,8 +69,7 @@ alex@ubuntu:~$ `
 
 4. Move the CRS setup file from the new directory into your ModSecurity directory:  </br>
 `$ sudo mv coreruleset-3.3.2/crs-setup.conf.example /etc/modsecurity/crs-setup.conf`
-
-4.(Optional but recommended) Move the rules directory from the new directory to your ModSecurity directory:  </br>
+  (Optional but recommended) Move the rules directory from the new directory to your ModSecurity directory:  </br>
 `$ sudo mv coreruleset-3.3.2/rules/ /etc/modsecurity/`
 
 5. Edit your Apache security2.conf file to ensure it’ll load ModSecurity rules:  </br>
