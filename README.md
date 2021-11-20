@@ -140,7 +140,7 @@ Copy & Paste the following code. </br>
 </VirtualHost>
 ```
 
-3. Go to /etc/apache2/sites-enabled, create the file 002-moc.conf </br>
+3. Go to /etc/apache2/sites-enabled, create the file `002-moc.conf` </br>
 Copy & Paste the following code.</br>
 
 ```
@@ -155,14 +155,12 @@ Copy & Paste the following code.</br>
 ```
 
 4. Restart apache </br>
-$ sudo systemctl restart apache2 </br>
-
-### How do I use it 
-
-1. Create the file sqlrules.conf inside of /etc/apache2/conf-enabled </br>
+`$ sudo systemctl restart apache2` </br>
+5. Create the file sqlrules.conf inside of /etc/apache2/conf-enabled </br>
 `# touch /etc/apache2/conf-enabled/sqlrules.conf`
-2. Reload Apache </br>
+6. Reload Apache </br>
 `$ sudo service apache2 reload`
 
+### How do I use it 
 For help you can make use of the `help` option. The basic usage is to pass an argument by default option. Example:
 
