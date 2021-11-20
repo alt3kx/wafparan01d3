@@ -10,11 +10,12 @@ Reference: https://coreruleset.org/20211028/working-with-paranoia-levels/
 ### How it works 
 
 The `wafparanoid.sh` bash script takes malicious requests using encoded payloads placed in different parts of HTTP requests based at the moment only on GET parameters, The results of the evaluation are recorded in the report debug file created on your machine.  
-  
+
 ### Approach
 
-`Pentester`: GreyBox Scope with limited access to WAFbox using a "shell" with privileges to start/reload WAF apache on DEV/STG enviroments sending diferent payloads</br>
-`Secutity Officers`: Define the best level of paranoid for each solution  in your organization, customize virtual rules patches</br>
+`Pentester`: GreyBox scope with limited access to WAF Linux box using a "shell" with privileges to start/reload WAF apache on DEV/STG/TEST enviroments sending diferent payloads.</br>
+`Secutity Officers`: Take the best desicion to apply the level of WAF paranoid for each solution in your organization</br>
 `Blueteamers`: Rule enforcement and best alerting less false positive/negative results for your organization</br>
-`Integrators`: Define the adequate level of paranoid customizing rules according your webapp. </br>
+`Integrators`: Define the adequate level of WAF paranoid customizing rules, according your webapp. </br>
 
+### PoC using Ubuntu Linux Box 
