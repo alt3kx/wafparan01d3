@@ -162,5 +162,11 @@ Copy & Paste the following code.</br>
 `$ sudo service apache2 reload`
 
 ### How do I use it 
-For help you can make use of the `help` option. The basic usage is to pass an argument by default option. Example:
+For help you can make use of the `help` option. The basic usage is to pass diferent arguments defined. </br>
+Example: </br>
+
+```
+$sudo ./wafparan0id3.sh 
+
+```
 
