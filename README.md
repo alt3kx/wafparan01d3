@@ -38,8 +38,7 @@ Reference: https://www.inmotionhosting.com/support/server/apache/install-modsecu
 8. Ensure the installed software version is at least 2.9: </br>
 `$ apt-cache show libapache2-mod-security2 `
 
-#### Configure ModSecurity 
-
+### Configure ModSecurity 
 1. Copy and rename the file: </br>
 `$ sudo cp /etc/modsecurity/modsecurity.conf-recommended /etc/modsecurity/modsecurity.conf` </br>
 Next, change the ModSecurity detection mode. First, move into the `/etc/modsecurity` folder: </br>
@@ -58,20 +57,16 @@ Next, change the ModSecurity detection mode. First, move into the `/etc/modsecur
 1. Download the latest CRS from CoreRuleSet.org/installation </br>
 `$ wget https://github.com/coreruleset/coreruleset/archive/refs/tags/v3.3.2.zip`
 2. Verify the checksum, be sure match of public available here: https://coreruleset.org/installation/
-
 `$ sha1sum v3.3.2.zip && echo ProvidedChecksum` </br>
 88f336ba32a89922cade11a4b8e986f2e46a97cf  v3.3.2.zip</br>
 ProvidedChecksum</br>
 alex@ubuntu:~$ `</br>
-
 3. Uncompress the zip file. </br>
 `$ unzip v3.3.2.zip`
-
 4. Move the CRS setup file from the new directory into your ModSecurity directory:  </br>
 `$ sudo mv coreruleset-3.3.2/crs-setup.conf.example /etc/modsecurity/crs-setup.conf`
   (Optional but recommended) Move the rules directory from the new directory to your ModSecurity directory:  </br>
 `$ sudo mv coreruleset-3.3.2/rules/ /etc/modsecurity/`
-
 5. Edit your Apache security2.conf file to ensure it’ll load ModSecurity rules:  </br>
 `$ vim /etc/apache2/mods-enabled/security2.conf` <-- where is this file ? 
 
@@ -83,7 +78,6 @@ alex@ubuntu:~$ `</br>
 
 6. Ensure both the default ModSecurity and new CRS configuration files are listed. The first line conf file path may already be included. 
 The second file path should be wherever you moved the /rules directory.  </br>
-
 7. Edit /etc/apache2/apache2.conf  </br>
 `$ vim /etc/apache2/apache2.conf`
 
