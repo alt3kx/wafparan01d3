@@ -59,7 +59,7 @@ Next, change the ModSecurity detection mode. First, move into the `/etc/modsecur
 `$ wget https://github.com/coreruleset/coreruleset/archive/refs/tags/v3.3.2.zip`
 2. Verify the checksum, be sure match of public available here: https://coreruleset.org/installation/
 
-`$ sha1sum v3.3.2.zip && echo ProvidedChecksum 
+`$ sha1sum v3.3.2.zip && echo ProvidedChecksum` 
 88f336ba32a89922cade11a4b8e986f2e46a97cf  v3.3.2.zip
 ProvidedChecksum
 alex@ubuntu:~$ `
