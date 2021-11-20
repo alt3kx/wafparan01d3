@@ -16,5 +16,5 @@ The `wafparanoid.sh` bash script takes malicious requests using encoded payloads
 `Pentester`: GreyBox Scope with limited access to WAFbox using a "shell" with privileges to start/reload WAF apache on DEV/STG enviroments sending diferent payloads</br>
 `Secutity Officers`: Define the best level of paranoid for each solution  in your organization, customize virtual rules patches</br>
 `Blueteamers`: Rule enforcement and best alerting less false positive/negative results for your organization</br>
-`Integrators`: Define the adequate level of paranoid customizing according your webapp. </br>
+`Integrators`: Define the adequate level of paranoid customizing rules according your webapp. </br>
 
