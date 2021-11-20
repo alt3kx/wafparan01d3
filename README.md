@@ -3,7 +3,7 @@
 <h1 align="center">
   <a href="https://github.com/alt3kx/wafparanoid/"><img src="https://user-images.githubusercontent.com/3140111/142721218-469e835e-cb27-4f17-913a-7aeb0665f905.png" alt="wafparanoid" width="500" height="500"></a>
   <br>
-  WAFPARAN01D
+  WAFPARAN01D3
 </h1>
 <p align="center">
   <b>The Web Application Firewall Paranoia Level Test Tool.</b>
@@ -22,7 +22,7 @@ Reference: https://coreruleset.org/20211028/working-with-paranoia-levels/
 
 ### How it works 
 
-- The `wafparan01d.sh` bash script takes malicious requests using encoded payloads placed in different parts of HTTP requests based at the moment only on GET parameters, The results of the evaluation are recorded in the report debug file created on your machine. 
+- The `wafparan01d3.sh` bash script takes malicious requests using encoded payloads placed in different parts of HTTP requests based at the moment only on GET parameters, The results of the evaluation are recorded in the report debug file created on your machine. 
 - By disabling rules observe the behavior and response for each WAF paranoia level setting different attacks or payloads in a quick way.
 - The PoC below provide de basic configuration and re-use byself the current WAF  deployed to settting a basic "Mock" and simulate the backend.
 
