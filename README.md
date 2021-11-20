@@ -122,7 +122,7 @@ Listen 8080
 Listen 18080
 ```
 
-2. Go to /etc/apache2/sites-enabled, create the file 001-test.conf </br>
+2. Go to `/etc/apache2/sites-enabled`, create the file `001-test.conf` </br>
 Copy & Paste the following code. </br>
 
 ```     
@@ -140,7 +140,7 @@ Copy & Paste the following code. </br>
 </VirtualHost>
 ```
 
-3. Go to /etc/apache2/sites-enabled, create the file `002-moc.conf` </br>
+3. Go to `/etc/apache2/sites-enabled`, create the file `002-moc.conf` </br>
 Copy & Paste the following code.</br>
 
 ```
