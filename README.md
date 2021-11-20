@@ -54,3 +54,42 @@ Next, change the ModSecurity detection mode. First, move into the `/etc/modsecur
 5. Restart Apache: </br>
 `$ sudo systemctl restart apache2`
 
+### Download OWASP Core Rule Set 
+1. Download the latest CRS from CoreRuleSet.org/installation </br>
+`$ wget https://github.com/coreruleset/coreruleset/archive/refs/tags/v3.3.2.zip`
+2. Verify the checksum, be sure match of public available here: https://coreruleset.org/installation/
+
+`$ sha1sum v3.3.2.zip && echo ProvidedChecksum 
+88f336ba32a89922cade11a4b8e986f2e46a97cf  v3.3.2.zip
+ProvidedChecksum
+alex@ubuntu:~$ `
+
+3. Uncompress the zip file 
+`$ unzip v3.3.2.zip`
+
+4. Move the CRS setup file from the new directory into your ModSecurity directory:
+$ `sudo mv coreruleset-3.3.2/crs-setup.conf.example /etc/modsecurity/crs-setup.conf`
+
+4.(Optional but recommended) Move the rules directory from the new directory to your ModSecurity directory:
+`$ sudo mv coreruleset-3.3.2/rules/ /etc/modsecurity/`
+
+5. Edit your Apache security2.conf file to ensure it’ll load ModSecurity rules:
+`$ vim /etc/apache2/mods-enabled/security2.conf` <-- where is this file ? 
+
+`        IncludeOptional /etc/modsecurity/crs-setup.conf
+        IncludeOptional /etc/modsecurity/rules/*.conf
+
+        # Include OWASP ModSecurity CRS rules if installed
+        #IncludeOptional /usr/share/modsecurity-crs/*.load`
+
+6. Ensure both the default ModSecurity and new CRS configuration files are listed. The first line conf file path may already be included. 
+The second file path should be wherever you moved the /rules directory.
+
+7. Edit /etc/apache2/apache2.conf
+`$ vim /etc/apache2/apache2.conf`
+
+`Include /etc/modsecurity/modsecurity.conf`
+`Include /etc/modsecurity/crs/crs-setup.conf`
+`Include /etc/modsecurity/crs/rules/*.conf`
+
+
