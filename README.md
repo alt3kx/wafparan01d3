@@ -6,7 +6,7 @@
   WAFPARANOID
 </h1>
 <p align="center">
-  <b>The Web Application Firewall Paranoia Level Tool.</b>
+  <b>The Web Application Firewall Paranoia Level Test Tool.</b>
   <br>
   <b>
     &mdash; From <a href="https://alt3kx.github.io">alt3kx.github.io</a>
