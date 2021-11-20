@@ -31,7 +31,7 @@ Reference: https://coreruleset.org/20211028/working-with-paranoia-levels/
 - `Pentester`: GreyBox scope with limited access to WAF Linux box using a "shell" with privileges to start/reload and edit WAF Apache config files on DEV/STG/TEST enviroments sending diferent payloads.</br>
 - `Secutity Officers`: Take the best desicion to apply the level of WAF paranoid for each solution in your organization. </br>
 - `Blueteamers`: Rule enforcement, best alerting , less false positive/negative results in your organization. </br>
-- `Integrators`: Define the adequate level of WAF paranoid quickly customizing rules or creating virtual patches. </br>
+- `Integrators`: Define the adequate level of WAF paranoia quickly customizing rules or creating virtual patches. </br>
 
 ### Proof of Concept: Based on Ubuntu 20.04.3 and CRS 3.3.2 
 Reference: https://www.inmotionhosting.com/support/server/apache/install-modsecurity-apache-module/ </br>
