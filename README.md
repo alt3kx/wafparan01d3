@@ -47,10 +47,10 @@ Next, change the ModSecurity detection mode. First, move into the `/etc/modsecur
 `$ sudo vi /etc/modsecurity/modsecurity.conf`
 3. Near the top of the file, you’ll see `SecRuleEngine DetectionOnly`. Change DetectionOnly to `On`. </br>
 
-  ORIGINAL VALUE: `SecRuleEngine DetectionOnly` </br>
-  NEW VALUE: `SecRuleEngine On` </br>
+  Original value: `SecRuleEngine DetectionOnly` </br>
+  New value: `SecRuleEngine On` </br>
 
 4. Save changes. </br>
-Restart Apache: </br>
+5. Restart Apache: </br>
 `$ sudo systemctl restart apache2`
 
