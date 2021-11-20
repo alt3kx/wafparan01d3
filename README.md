@@ -83,7 +83,7 @@ alex@ubuntu:~$ `</br>
   (Optional but recommended) Move the rules directory from the new directory to your ModSecurity directory:  </br>
 `$ sudo mv coreruleset-3.3.2/rules/ /etc/modsecurity/`
 5. Edit your Apache security2.conf file to ensure it’ll load ModSecurity rules:  </br>
-`$ vim /etc/apache2/mods-enabled/security2.conf` <-- where is this file ? 
+`$ sudo vim /etc/apache2/mods-enabled/security2.conf` <-- where is this file ? 
 
 ```     IncludeOptional /etc/modsecurity/crs-setup.conf
         IncludeOptional /etc/modsecurity/rules/*.conf
@@ -94,7 +94,7 @@ alex@ubuntu:~$ `</br>
 6. Ensure both the default ModSecurity and new CRS configuration files are listed. The first line conf file path may already be included. 
 The second file path should be wherever you moved the /rules directory.  </br>
 7. Edit /etc/apache2/apache2.conf  </br>
-`$ vim /etc/apache2/apache2.conf`
+`$ sudo vim /etc/apache2/apache2.conf`
 
 ```     Include /etc/modsecurity/modsecurity.conf
         Include /etc/modsecurity/crs/crs-setup.conf
@@ -105,9 +105,9 @@ The second file path should be wherever you moved the /rules directory.  </br>
 1. Copy the following modules. Enable Proxy and Rewrite module.  </br>
 ``` 
 $ /etc/apache2
-$ cp mods-available/proxy_http.load mods-enabled
-$ cp mods-available/proxy.load mods-enabled/
-$ cp mods-available/rewrite.load mods-enabled/
+$ sudo cp mods-available/proxy_http.load mods-enabled
+$ sudo cp mods-available/proxy.load mods-enabled/
+$ sudo cp mods-available/rewrite.load mods-enabled/
 ```
 
 2. Restart Apache </br>
@@ -157,7 +157,7 @@ Copy & Paste the following code.</br>
 4. Restart apache </br>
 `$ sudo systemctl restart apache2` </br>
 5. Create the file sqlrules.conf inside of /etc/apache2/conf-enabled </br>
-`# touch /etc/apache2/conf-enabled/sqlrules.conf`
+`$ sudo touch /etc/apache2/conf-enabled/sqlrules.conf`
 6. Reload Apache </br>
 `$ sudo service apache2 reload`
 
@@ -166,7 +166,7 @@ For help you can make use of the `help` option. The basic usage is to pass difer
 Example: </br>
 
 ```
-$sudo ./wafparan0id3.sh 
+$ sudo ./wafparan0id3.sh 
 
 ```
 
