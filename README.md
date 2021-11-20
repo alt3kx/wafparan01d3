@@ -108,7 +108,7 @@ $ cp mods-available/rewrite.load mods-enabled/`
 2. Restart Apache </br>
 `$ sudo systemctl restart apache2`
 
-### Add Virtualhosts for testing 
+#### Add Virtualhosts for testing "Mocks"
 1. Add ports </br>
 Edit `/etc/apache2/ports.conf`, add the following lines:
 
@@ -148,14 +148,12 @@ Copy & Paste the following code.</br>
 4. Restart apache </br>
 $ sudo systemctl restart apache2 </br>
 
-
-# wafparanoid.sh  
+### How do I use it 
 
 1. Create the file sqlrules.conf inside of /etc/apache2/conf-enabled </br>
 `# touch /etc/apache2/conf-enabled/sqlrules.conf`
-
 2. Reload Apache </br>
 `$ sudo service apache2 reload`
 
-3.- Launch the script </br>
-`$ ./vuln.sh`
+For help you can make use of the `help` option. The basic usage is to pass an argument by default option. Example:
+
