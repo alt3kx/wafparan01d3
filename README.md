@@ -168,7 +168,22 @@ Example: </br>
 ```
 $ sudo ./wafparan0id3.sh help 
 
-                                                                
+           (                                  )   ) (       )  
+ (  (      ))\ )          ) (      )        ( /(( /( )\ ) ( /(  
+ )\))(  ( /(()/( `  )  ( /( )(  ( /(  (     )\())\()|()/( )\()) 
+((_)()\ )(_))(_))/(/(  )(_)|()\ )(_)) )\ ) ((_)((_)\ ((_)|(_)\  
+_(()((_|(_)(_) _((_)_\((_)_ ((_|(_)_ _(_/( /  (_) (_)_| |__ (_) 
+\ V  V / _` |  _| '_ \) _` | '_/ _` | ' \)) () || |/ _` ||_ \   
+ \_/\_/\__,_|_| | .__/\__,_|_| \__,_|_||_| \__/ |_|\__,_|___/   
+                |_|                                             
+
+                    ~ WAFPARANO1D3 : v1.0 ~
+     The Web Application Firewall Paranoia Level Test Tool.
+    
+[*] Checking https://example.org
+[+] The site https://example.org is behind Edgecast (Verizon Digital Media) WAF.
+[~] Number of requests: 2
+`                                                               
             (                                  )   ) (       )  
  (  (      ))\ )          ) (      )        ( /(( /( )\ ) ( /(  
  )\))(  ( /(()/( `  )  ( /( )(  ( /(  (     )\())\()|()/( )\()) 
