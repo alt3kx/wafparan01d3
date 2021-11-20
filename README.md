@@ -166,7 +166,7 @@ For help you can make use of the `help` option. The basic usage is to pass difer
 Example: </br>
 
 ```
-$ sudo ./wafparan0id3.sh 
+$ sudo ./wafparan0id3.sh help 
 
 ```
 
