@@ -59,10 +59,10 @@ Next, change the ModSecurity detection mode. First, move into the `/etc/modsecur
 `$ wget https://github.com/coreruleset/coreruleset/archive/refs/tags/v3.3.2.zip`
 2. Verify the checksum, be sure match of public available here: https://coreruleset.org/installation/
 
-`$ sha1sum v3.3.2.zip && echo ProvidedChecksum` 
-88f336ba32a89922cade11a4b8e986f2e46a97cf  v3.3.2.zip
-ProvidedChecksum
-alex@ubuntu:~$ `
+`$ sha1sum v3.3.2.zip && echo ProvidedChecksum` </br>
+88f336ba32a89922cade11a4b8e986f2e46a97cf  v3.3.2.zip</br>
+ProvidedChecksum</br>
+alex@ubuntu:~$ `</br>
 
 3. Uncompress the zip file. </br>
 `$ unzip v3.3.2.zip`
@@ -87,8 +87,6 @@ The second file path should be wherever you moved the /rules directory.  </br>
 7. Edit /etc/apache2/apache2.conf  </br>
 `$ vim /etc/apache2/apache2.conf`
 
-`Include /etc/modsecurity/modsecurity.conf
-Include /etc/modsecurity/crs/crs-setup.conf
-Include /etc/modsecurity/crs/rules/*.conf `
-
-
+`       Include /etc/modsecurity/modsecurity.conf
+        Include /etc/modsecurity/crs/crs-setup.conf
+        Include /etc/modsecurity/crs/rules/*.conf `
