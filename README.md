@@ -1,1 +1,2 @@
-# wafparanoid-
+# Quick WAF "paranoid" Evaluation 
+
