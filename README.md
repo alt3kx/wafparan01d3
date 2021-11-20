@@ -45,7 +45,7 @@ Reference: https://www.inmotionhosting.com/support/server/apache/install-modsecu
 Next, change the ModSecurity detection mode. First, move into the `/etc/modsecurity` folder: </br>
 2. Edit the ModSecurity configuration file with vi, vim, emacs, or nano. </br>
 `$ sudo vi /etc/modsecurity/modsecurity.conf`
-3. Near the top of the file, you’ll see `SecRuleEngine DetectionOnly`. Change DetectionOnly to `On`. </br>
+3. Near the top of the file, you’ll see `SecRuleEngine DetectionOnly`. Change `DetectionOnly` to `On`. </br>
 
   Original value: `SecRuleEngine DetectionOnly` </br>
   New value: `SecRuleEngine On` </br>
