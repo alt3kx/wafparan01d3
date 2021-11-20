@@ -1,6 +1,19 @@
 # Quick WAF "paranoid" Doctor Evaluation 
 
-<img src="https://user-images.githubusercontent.com/3140111/142721218-469e835e-cb27-4f17-913a-7aeb0665f905.png" width="650" height="650">
+<h1 align="center">
+  <a href="https://github.com/alt3kx/wafparanoid/"><img src="https://user-images.githubusercontent.com/3140111/142721218-469e835e-cb27-4f17-913a-7aeb0665f905.png" alt="wafparanoid" width="650" height="650"></a>
+  <br>
+  WAFPARANOID
+</h1>
+<p align="center">
+  <b>The Web Application Firewall Paranoia Level Tool.</b>
+  <br>
+  <b>
+    &mdash; From <a href="https://alt3kx.github.io">alt3kx.github.io</a>
+  </b>
+</p>
+<p align="center">
+</p>
 
 ### Introduction to Paranoia Levels 
 
@@ -84,3 +97,65 @@ The second file path should be wherever you moved the /rules directory.  </br>
 `       Include /etc/modsecurity/modsecurity.conf
         Include /etc/modsecurity/crs/crs-setup.conf
         Include /etc/modsecurity/crs/rules/*.conf `
+
+#### Apache Load Modules Rewrite & Proxy
+1. Copy the following modules. Enable Proxy and Rewrite module.  </br>
+` $ /etc/apache2
+$ cp mods-available/proxy_http.load mods-enabled
+$ cp mods-available/proxy.load mods-enabled/
+$ cp mods-available/rewrite.load mods-enabled/` 
+
+2. Restart Apache </br>
+`$ sudo systemctl restart apache2`
+
+### Add Virtualhosts for testing 
+1. Add ports </br>
+Edit `/etc/apache2/ports.conf`, add the following lines:
+
+`Listen 8080
+Listen 18080`
+
+2. Go to /etc/apache2/sites-enabled, create the file 001-test.conf </br>
+Copy & Paste the following code. </br>
+
+`<VirtualHost *:8080>
+        ServerName test.domain:8080
+
+        SecRuleEngine On
+
+        ErrorLog ${APACHE_LOG_DIR}/test_error.log
+        CustomLog ${APACHE_LOG_DIR}/test_access.log combined
+        SecAuditLog ${APACHE_LOG_DIR}/test_audit.log
+
+        ProxyPass / http://127.0.0.1:18080/
+        ProxyPassReverse / http://127.0.0.1:18080/
+</VirtualHost>
+`
+3. Go to /etc/apache2/sites-enabled, create the file 002-moc.conf </br>
+Copy & Paste the following code.</br>
+
+`
+<VirtualHost 127.0.0.1:18080>
+
+        ErrorLog ${APACHE_LOG_DIR}/moc_error.log
+        CustomLog ${APACHE_LOG_DIR}/moc_access.log combined
+
+        RewriteEngine On
+        RewriteRule ^(.*)$ $1 [R=200,L]
+</VirtualHost>
+`
+
+4. Restart apache </br>
+$ sudo systemctl restart apache2 </br>
+
+
+# wafparanoid.sh  
+
+1. Create the file sqlrules.conf inside of /etc/apache2/conf-enabled </br>
+`# touch /etc/apache2/conf-enabled/sqlrules.conf`
+
+2. Reload Apache </br>
+`$ sudo service apache2 reload`
+
+3.- Launch the script </br>
+`$ ./vuln.sh`
