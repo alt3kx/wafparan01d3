@@ -1,7 +1,7 @@
 # Quick WAF "paranoid" Doctor Evaluation 
 
 <h1 align="center">
-  <a href="https://github.com/alt3kx/wafparanoid/"><img src="https://user-images.githubusercontent.com/3140111/142721218-469e835e-cb27-4f17-913a-7aeb0665f905.png" alt="wafparanoid" width="500" height="500"></a>
+  <a href="https://github.com/alt3kx/wafparanoid/"><img src="https://user-images.githubusercontent.com/3140111/142735562-7f223d9c-0da0-485c-9d06-e256ee7bdabd.png" alt="wafparanoid" width="500" height="500"></a>
   <br>
   WAFPARAN01D3
 </h1>
