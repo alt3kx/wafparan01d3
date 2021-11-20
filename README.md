@@ -64,16 +64,16 @@ Next, change the ModSecurity detection mode. First, move into the `/etc/modsecur
 ProvidedChecksum
 alex@ubuntu:~$ `
 
-3. Uncompress the zip file 
+3. Uncompress the zip file. </br>
 `$ unzip v3.3.2.zip`
 
-4. Move the CRS setup file from the new directory into your ModSecurity directory:
+4. Move the CRS setup file from the new directory into your ModSecurity directory:  </br>
 $ `sudo mv coreruleset-3.3.2/crs-setup.conf.example /etc/modsecurity/crs-setup.conf`
 
-4.(Optional but recommended) Move the rules directory from the new directory to your ModSecurity directory:
+4.(Optional but recommended) Move the rules directory from the new directory to your ModSecurity directory:  </br>
 `$ sudo mv coreruleset-3.3.2/rules/ /etc/modsecurity/`
 
-5. Edit your Apache security2.conf file to ensure it’ll load ModSecurity rules:
+5. Edit your Apache security2.conf file to ensure it’ll load ModSecurity rules:  </br>
 `$ vim /etc/apache2/mods-enabled/security2.conf` <-- where is this file ? 
 
 `        IncludeOptional /etc/modsecurity/crs-setup.conf
@@ -83,9 +83,9 @@ $ `sudo mv coreruleset-3.3.2/crs-setup.conf.example /etc/modsecurity/crs-setup.c
         #IncludeOptional /usr/share/modsecurity-crs/*.load`
 
 6. Ensure both the default ModSecurity and new CRS configuration files are listed. The first line conf file path may already be included. 
-The second file path should be wherever you moved the /rules directory.
+The second file path should be wherever you moved the /rules directory.  </br>
 
-7. Edit /etc/apache2/apache2.conf
+7. Edit /etc/apache2/apache2.conf  </br>
 `$ vim /etc/apache2/apache2.conf`
 
 `Include /etc/modsecurity/modsecurity.conf`
