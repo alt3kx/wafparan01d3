@@ -38,7 +38,7 @@ Reference: https://www.inmotionhosting.com/support/server/apache/install-modsecu
 8. Ensure the installed software version is at least 2.9: </br>
 `$ apt-cache show libapache2-mod-security2 `
 
-### Configure ModSecurity 
+#### Configure ModSecurity 
 1. Copy and rename the file: </br>
 `$ sudo cp /etc/modsecurity/modsecurity.conf-recommended /etc/modsecurity/modsecurity.conf` </br>
 Next, change the ModSecurity detection mode. First, move into the `/etc/modsecurity` folder: </br>
@@ -53,7 +53,7 @@ Next, change the ModSecurity detection mode. First, move into the `/etc/modsecur
 5. Restart Apache: </br>
 `$ sudo systemctl restart apache2`
 
-### Download OWASP Core Rule Set 
+#### Download OWASP Core Rule Set 
 1. Download the latest CRS from CoreRuleSet.org/installation </br>
 `$ wget https://github.com/coreruleset/coreruleset/archive/refs/tags/v3.3.2.zip`
 2. Verify the checksum, be sure match of public available here: https://coreruleset.org/installation/
