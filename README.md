@@ -21,6 +21,36 @@ The `wafparanoid.sh` bash script takes malicious requests using encoded payloads
 ### Proof of Concept: Based on Ubuntu 20.04.3 and CRS 3.3.0 
 Reference: https://www.inmotionhosting.com/support/server/apache/install-modsecurity-apache-module/ </br>
 
-#### Install Ubuntu Linux
-1. Download ISO and install by default toptions
-https://ubuntu.com/download/desktop/thank-you?version=20.04.3&architecture=amd64
+#### Initial installation 
+1. Update software repos: </br>
+`$ sudo apt update -y && apt dist-upgrade -you`
+2. Install Essentials: </br>
+`$ sudo apt-get install build-essential`
+3. Install apache2 for ubuntu (if it is not installed): </br>
+`$ sudo apt-get install apache2`
+4. Download and install the ModSecurity Apache module: </br>
+`$ sudo apt install libapache2-mod-security2`
+5. Install curl for ubuntu (if it is not installed): </br>
+`$ sudo apt-get install curl vim gridsite-clients`
+6. Type `Y`.
+7. Restart the Apache service: </br>
+`$ sudo systemctl restart apache2`
+8. Ensure the installed software version is at least 2.9: </br>
+`$ apt-cache show libapache2-mod-security2 `
+
+#### Configure ModSecurity 
+
+1. Copy and rename the file: </br>
+`$ sudo cp /etc/modsecurity/modsecurity.conf-recommended /etc/modsecurity/modsecurity.conf` </br>
+Next, change the ModSecurity detection mode. First, move into the `/etc/modsecurity` folder: </br>
+2. Edit the ModSecurity configuration file with vi, vim, emacs, or nano. </br>
+`$ sudo vi /etc/modsecurity/modsecurity.conf`
+3. Near the top of the file, you’ll see `SecRuleEngine DetectionOnly`. Change DetectionOnly to `On`. </br>
+
+  ORIGINAL VALUE: `SecRuleEngine DetectionOnly` </br>
+  NEW VALUE: `SecRuleEngine On` </br>
+
+4. Save changes. </br>
+Restart Apache: </br>
+`$ sudo systemctl restart apache2`
+
