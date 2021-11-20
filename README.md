@@ -24,7 +24,7 @@ Reference: https://coreruleset.org/20211028/working-with-paranoia-levels/
 
 - The `wafparan01d.sh` bash script takes malicious requests using encoded payloads placed in different parts of HTTP requests based at the moment only on GET parameters, The results of the evaluation are recorded in the report debug file created on your machine. 
 - By disabling rules observe the behavior and response for each WAF paranoia level setting different attacks or payloads in a quick way.
-- The PoC below provide de basic configuration and re-use the byself the WAF deployed to settting a basic "Mock" to simulate the backend. 
+- The PoC below provide de basic configuration and re-use byself the WAF current deployed to settting a basic "Mock" to simulate the backend. 
 
 ### Approach
 
