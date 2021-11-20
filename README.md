@@ -141,7 +141,7 @@ Copy & Paste the following code. </br>
 ```
 
 3. Go to `/etc/apache2/sites-enabled`, create the file `002-moc.conf` </br>
-Copy & Paste the following code.</br>
+Copy & Paste the following code. </br>
 
 ```
 <VirtualHost 127.0.0.1:18080>
