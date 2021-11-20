@@ -33,7 +33,7 @@ Reference: https://coreruleset.org/20211028/working-with-paranoia-levels/
 - `Blueteamers`: Rule enforcement, best alerting , less false positive/negative results in your organization. </br>
 - `Integrators`: Define the adequate level of WAF paranoia quickly customizing rules or creating virtual patches. </br>
 
-### Proof of Concept: Based on Ubuntu 20.04.3 and CRS 3.3.2 
+### Proof of Concept: Based on Ubuntu 20.04.3 and OWASP Core Rule Set (CRS) v3.3.2 
 Reference: https://www.inmotionhosting.com/support/server/apache/install-modsecurity-apache-module/ </br>
 
 #### Initial installation 
