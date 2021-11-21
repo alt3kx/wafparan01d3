@@ -65,7 +65,6 @@ Next, change the ModSecurity detection mode. First, move into the `cd /etc/modse
 
   Original value: `SecRuleEngine DetectionOnly` </br>
   New value: `SecRuleEngine On` </br>
-  
 ![modsec](https://user-images.githubusercontent.com/3140111/142753438-1b9d687b-e6fd-4b80-b172-46e4f59e4916.png)
 
 4. Save changes. </br>
