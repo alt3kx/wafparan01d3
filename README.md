@@ -268,5 +268,5 @@ Gifs images here
 
 ### Authors
 Alex Hernandez aka <em><a href="https://twitter.com/_alt3kx_" rel="nofollow">(@\_alt3kx\_)</a></em></br>
-Jesus Huerta  <em><a href="https://twitter.com/huerta" rel="nofollow">(@\_huerta\_)</a></em>
+Jesus Huerta aka <em><a href="https://twitter.com/huerta" rel="nofollow">(@\_huerta\_)</a></em>
 
