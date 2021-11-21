@@ -192,3 +192,4 @@ You can try `wafparan01d3.sh` by running the demo environment that deploys WAF M
 ### Authors
 Alex Hernandez aka <em><a href="https://twitter.com/_alt3kx_" rel="nofollow">(@\_alt3kx\_)</a></em></br>
 Jesus Huerta  <em><a href="https://twitter.com/huerta" rel="nofollow">(@\_huerta\_)</a></em>
+
