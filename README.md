@@ -93,7 +93,6 @@ $ sudo vim /etc/modsecurity/modsecurity.conf
 ```
 $ sudo systemctl restart apache2
 ```
-
 #### Download OWASP Core Rule Set 
 1. Download the latest CRS from CoreRuleSet.org/installation </br>
 ```
