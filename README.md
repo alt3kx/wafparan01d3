@@ -190,5 +190,5 @@ _(()((_|(_)(_) _((_)_\((_)_ ((_|(_)_ _(_/( /  (_) (_)_| |__ (_)
 You can try `wafparan01d3.sh` by running the demo environment that deploys WAF ModSecurity & 'Mock' using latest OWASP Core Rule Set `CRS 3.3.2` and `wafparan01d3.sh` evaluating ModSecurity paranoia levels easyble customizable. 
 
 # Authors
-Alex Hernandez aka <em><a href="https://twitter.com/_alt3kx_" rel="nofollow">(@\_alt3kx\_)</a></em>
-Jesus Huerta Martinez <em><a href="https://twitter.com/_alt3kx_" rel="nofollow">(@\_alt3kx\_)</a></em>
+Alex Hernandez aka <em><a href="https://twitter.com/_alt3kx_" rel="nofollow">(@\_alt3kx\_)</a></em></br>
+Jesus Huerta Martinez <em><a href="https://twitter.com/huerta" rel="nofollow">(@\_huerta\_)</a></em>
