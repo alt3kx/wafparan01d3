@@ -272,7 +272,7 @@ optional arguments:
   --payload [_PAYLOAD]  Define payload file. Ex. --payload payload2.txt
   --rules-remove [_RULESREMOVE]
                         Define rules remove file. Ex. --rules-remove rules1.txt
-  --log [_LOG]          Define path of the log file. Ex. --log /var/log/apache/paranoid.log
+  --log [_LOG]          Define path of the log file. Ex. --log /var/log/apache/wafparan01d3.log <-- check this! 
   --domain [_DOMAIN]    Define your domain. Ex. --domain example.domain:8080
   --conf-file [_CONF_FILE]
                         Define configuration file Ex. REQUEST-901-INITIALIZATION.conf                                                                 
