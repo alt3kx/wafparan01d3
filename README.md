@@ -115,7 +115,7 @@ The second file path should be wherever you moved the /rules directory.  </br>
 #### Apache Load Modules Rewrite & Proxy
 1. Copy the following modules. Enable Proxy and Rewrite module.  </br>
 ``` 
-$ /etc/apache2
+$ cd /etc/apache2
 $ sudo cp mods-available/proxy_http.load mods-enabled
 $ sudo cp mods-available/proxy.load mods-enabled/
 $ sudo cp mods-available/rewrite.load mods-enabled/
