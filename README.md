@@ -162,7 +162,12 @@ $ sudo cp mods-available/rewrite.load mods-enabled/
 
 #### Add Virtualhosts for testing "Mocks"
 1. Add ports </br>
-Edit `/etc/apache2/ports.conf`, add the following lines:
+Edit `/etc/apache2/ports.conf`, 
+
+```
+$ sudo /etc/apache2/ports.conf
+```
+Copy & Paste the following code and save it. </br>
 
 ```
 Listen 8080
