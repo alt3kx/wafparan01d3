@@ -254,7 +254,7 @@ _(()((_|(_)(_) _((_)_\((_)_ ((_|(_)_ _(_/( /  (_) (_)_| |__ (_)
 `                                                                      
 ```
 ### Demos 
-You can try `wafparan01d3.py` by running the demo environment that deploys WAF ModSecurity & 'Mock' using latest OWASP Core Rule Set `CRS 3.3.2` and `wafparan01d3.py` evaluating ModSecurity paranoia levels easyble customizable. 
+You can try `wafparan01d3.py` by running the VM environment that deploys WAF ModSecurity & 'Mock' using latest OWASP Core Rule Set `CRS 3.3.2` and `wafparan01d3.py` evaluating ModSecurity paranoia levels easyble customizable. 
 
 To run the demo enviroment: 
 
