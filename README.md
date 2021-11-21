@@ -78,7 +78,9 @@ Next, change the ModSecurity detection mode. First, move into the `cd /etc/modse
 `$ sha1sum v3.3.2.zip && echo ProvidedChecksum` </br>
 88f336ba32a89922cade11a4b8e986f2e46a97cf  v3.3.2.zip</br>
 ProvidedChecksum </br>
-alex@ubuntu:~$ `</br>
+
+![checksum](https://user-images.githubusercontent.com/3140111/142753669-85f62be6-edf8-4244-be51-8ac8b7c22ebd.png)
+
 3. Uncompress the zip file. </br>
 `$ sudo unzip v3.3.2.zip`
 4. Move the CRS setup file from the new directory into your ModSecurity directory:  </br>
