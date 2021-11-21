@@ -1,7 +1,7 @@
 # Quick WAF "paranoid" Doctor Evaluation 
 
 <h1 align="center">
-  <a href="https://github.com/alt3kx/wafparanoid/"><img src="https://user-images.githubusercontent.com/3140111/142735562-7f223d9c-0da0-485c-9d06-e256ee7bdabd.png" alt="wafparanoid" width="500" height="500"></a>
+  <a href="https://github.com/alt3kx/wafparanoid/"><img src="https://user-images.githubusercontent.com/3140111/142735562-7f223d9c-0da0-485c-9d06-e256ee7bdabd.png" alt="wafparano1d3" width="500" height="500"></a>
   <br>
   WAFPARAN01D3
 </h1>
@@ -22,12 +22,12 @@ Reference: https://coreruleset.org/20211028/working-with-paranoia-levels/
 
 ### How it works 
 
-- The `wafparan01d3.py` python3 script takes malicious requests using encoded payloads placed in different parts of HTTP requests based at the moment only on GET parameters, The results of the evaluation are recorded in the report debug file created on your machine. 
+- The `wafparan01d3.py` python3 script takes malicious requests using encoded payloads placed in different parts of HTTP requests based on GET parameters, The results of the evaluation are recorded in the report debug file created on your machine. 
 - Observe the behavior and response for each WAF paranoia level setting different attacks or payloads by using the default config level.
 - The PoC below provide de basic installation and configuration from scratch and re-use byself the current WAF deployed by settting a basic "Mock" and simulate the backend.
 - The detault payloads avaiable was called `mysql_gosecure.txt` based on the research "A Scientific Notation Bug in MySQL left AWS WAF Clients Vulnerable to SQL Injection" from gosecure available here https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bug-in-mysql-left-aws-waf-clients-vulnerable-to-sql-injection/ evaluating our WAFs in their different levels of paranoia either in a default configuration or by disabling different rules / IDs in a staggered and quick way.
 
-![gosecure](https://user-images.githubusercontent.com/3140111/142755697-50db1851-5c28-4ccd-a94d-4bbb4a26a90c.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/3140111/142755697-50db1851-5c28-4ccd-a94d-4bbb4a26a90c.png"></p>
 
 ### Approach
 
