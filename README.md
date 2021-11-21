@@ -155,8 +155,7 @@ Include /etc/modsecurity/modsecurity.conf
 Include /etc/modsecurity/crs/crs-setup.conf
 Include /etc/modsecurity/crs/rules/*.conf 
 ```
-
-Image here
+Gif image here
 
 #### Apache Load Modules Rewrite & Proxy
 1. Copy the following modules. Enable Proxy and Rewrite module.  </br>
@@ -166,12 +165,10 @@ $ sudo cp mods-available/proxy_http.load mods-enabled
 $ sudo cp mods-available/proxy.load mods-enabled/
 $ sudo cp mods-available/rewrite.load mods-enabled/
 ```
-
 2. Restart Apache </br>
 ```
 $ sudo systemctl restart apache2 <--FAIL! 
 ```
-
 #### Add Virtualhosts for testing "Mocks"
 1. Add ports, edit `/etc/apache2/ports.conf` </br>
 ```
@@ -182,7 +179,6 @@ Copy & Paste the following code and save it. </br>
 Listen 8080
 Listen 18080
 ```
-
 2. Go to `/etc/apache2/sites-enabled`, create the file `001-test.conf` </br>
 ```
 $ cd /etc/apache2/sites-enabled/
@@ -204,7 +200,6 @@ Copy & Paste the following code and save it. </br>
         ProxyPassReverse / http://127.0.0.1:18080/
 </VirtualHost>
 ```
-
 3. Go to `/etc/apache2/sites-enabled`, create the file `002-moc.conf` </br>
 ```
 $ cd /etc/apache2/sites-enabled/
@@ -239,7 +234,6 @@ $ sudo service apache2 reload
 $ curl -i -k -s -XGET http://localhost:8080/
 $ curl -i -k -s -XGET http://localhost:18080/
 ```
-
 ### How do I use it 
 For help you can make use of the `help` option. The basic usage is to pass diferent arguments defined. </br>
 Example: </br>
