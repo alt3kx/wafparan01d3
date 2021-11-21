@@ -39,8 +39,7 @@ Reference: https://www.inmotionhosting.com/support/server/apache/install-modsecu
 
 #### Initial installation 
 1. Update software repos: </br>
-`$ sudo apt update -y` </br>
-`$ apt dist-upgrade -y`
+`$ sudo apt update -y && sudo apt dist-upgrade -y`
 2. Install Essentials: </br>
 `$ sudo apt-get install build-essential`
 3. Install apache2 for ubuntu (if it is not installed): </br>
