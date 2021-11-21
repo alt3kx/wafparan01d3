@@ -189,15 +189,6 @@ _(()((_|(_)(_) _((_)_\((_)_ ((_|(_)_ _(_/( /  (_) (_)_| |__ (_)
 ### Demos 
 You can try `wafparan01d3.sh` by running the demo environment that deploys WAF ModSecurity & 'Mock' using latest OWASP Core Rule Set `CRS 3.3.2` and `wafparan01d3.sh` evaluating ModSecurity paranoia levels easyble customizable. 
 
-# References: 
-https://jira.atlassian.com/browse/CONFSERVER-67940 <br/>
-https://confluence.atlassian.com/doc/confluence-security-advisory-2021-08-25-1077906215.html <br/>
-
-Amazing writeup posted here: <br/> 
-https://github.com/httpvoid/writeups/blob/main/Confluence-RCE.md
-
-Some hints very useful by: <br/>
-<em><a href="https://twitter.com/wvuuuuuuuuuuuuu" rel="nofollow">@wvuuuuuuuuuuuuu</a></em><br/>
-<em><a href="https://twitter.com/iamnoooob" rel="nofollow">@iamnoooob</a></em><br/>
-# Author
+# Authors
 Alex Hernandez aka <em><a href="https://twitter.com/_alt3kx_" rel="nofollow">(@\_alt3kx\_)</a></em>
+Jesus Huerta Martinez <em><a href="https://twitter.com/_alt3kx_" rel="nofollow">(@\_alt3kx\_)</a></em>
