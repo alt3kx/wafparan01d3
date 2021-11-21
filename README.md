@@ -96,16 +96,21 @@ $ sudo systemctl restart apache2
 
 #### Download OWASP Core Rule Set 
 1. Download the latest CRS from CoreRuleSet.org/installation </br>
-`$ sudo wget https://github.com/coreruleset/coreruleset/archive/refs/tags/v3.3.2.zip`
+```
+$ sudo wget https://github.com/coreruleset/coreruleset/archive/refs/tags/v3.3.2.zip
+```
 2. Verify the checksum, be sure match of public available here: https://coreruleset.org/installation/ </br>
-`$ sha1sum v3.3.2.zip && echo ProvidedChecksum` </br>
-88f336ba32a89922cade11a4b8e986f2e46a97cf  v3.3.2.zip</br>
-ProvidedChecksum </br>
-
+```
+$ sha1sum v3.3.2.zip && echo ProvidedChecksum
+88f336ba32a89922cade11a4b8e986f2e46a97cf  v3.3.2.zip
+ProvidedChecksum 
+```
 ![checksum](https://user-images.githubusercontent.com/3140111/142753669-85f62be6-edf8-4244-be51-8ac8b7c22ebd.png)
 
 3. Uncompress the zip file. </br>
-`$ sudo unzip v3.3.2.zip`
+```
+$ sudo unzip v3.3.2.zip
+```
 4. Move the CRS setup file from the new directory into your ModSecurity directory:  </br>
 `$ sudo mv coreruleset-3.3.2/crs-setup.conf.example /etc/modsecurity/crs-setup.conf` </br>
   (Optional but recommended) Move the rules directory from the new directory to your ModSecurity directory:  </br>
