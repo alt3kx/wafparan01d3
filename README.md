@@ -98,7 +98,7 @@ $ sudo systemctl restart apache2
 1. Download the latest CRS from CoreRuleSet.org/installation </br>
 ```
 $ cd ~
-$ sudo wget https://github.com/coreruleset/coreruleset/archive/refs/tags/v3.3.2.zip
+$ wget https://github.com/coreruleset/coreruleset/archive/refs/tags/v3.3.2.zip
 ```
 2. Verify the checksum, be sure match of public available here: https://coreruleset.org/installation/ </br>
 ```
