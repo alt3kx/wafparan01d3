@@ -25,6 +25,7 @@ Reference: https://coreruleset.org/20211028/working-with-paranoia-levels/
 - The `wafparan01d3.sh` bash script takes malicious requests using encoded payloads placed in different parts of HTTP requests based at the moment only on GET parameters, The results of the evaluation are recorded in the report debug file created on your machine. 
 - Observe the behavior and response for each WAF paranoia level setting different attacks or payloads by using the default config level and disabling rules in a staggered and quick way.
 - The PoC below provide de basic installation and configuration from scratch and re-use byself the current WAF deployed by settting a basic "Mock" and simulate the backend.
+- The detault payload avaiable was called `mysql_gosecure.txt` based on the research "A Scientific Notation Bug in MySQL left AWS WAF Clients Vulnerable to SQL Injection" from gotsecure available here https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bug-in-mysql-left-aws-waf-clients-vulnerable-to-sql-injection/ arising the idea of evaluating our WAFs in their different levels of paranoia either in a default configuration or by disabling different rules / ids
 
 ### Approach
 
@@ -89,7 +90,7 @@ alex@ubuntu:~$ `</br>
         IncludeOptional /etc/modsecurity/rules/*.conf
 
         # Include OWASP ModSecurity CRS rules if installed
-        #IncludeOptional /usr/share/modsecurity-crs/*.load `
+        #IncludeOptional /usr/share/modsecurity-crs/*.load
 ```
 6. Ensure both the default ModSecurity and new CRS configuration files are listed. The first line conf file path may already be included. 
 The second file path should be wherever you moved the /rules directory.  </br>
@@ -187,10 +188,5 @@ _(()((_|(_)(_) _((_)_\((_)_ ((_|(_)_ _(_/( /  (_) (_)_| |__ (_)
 ```
 ### Demos 
 You can try `wafparan01d3.sh` by running the demo environment that deploys WAF ModSecurity & 'Mock' using latest OWASP Core Rule Set `CRS 3.3.2` and `wafparan01d3.sh` evaluating ModSecurity paranoia levels easyble customizable. 
-
-The detault payload avaiable was called `mysql_gosecure.txt` based on the research "A Scientific Notation Bug in MySQL left AWS WAF Clients Vulnerable to SQL Injection" from gotsecure available here https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bug-in-mysql-left-aws-waf-clients-vulnerable-to-sql-injection/ arising the idea of evaluating our WAFs in their different levels of paranoia either in a default configuration or by disabling different rules / ids
-
-
-
 
 
