@@ -80,7 +80,7 @@ Next, change the ModSecurity detection mode. First, move into the `cd /etc/modse
 ProvidedChecksum </br>
 alex@ubuntu:~$ `</br>
 3. Uncompress the zip file. </br>
-`$ unzip v3.3.2.zip`
+`$ sudo unzip v3.3.2.zip`
 4. Move the CRS setup file from the new directory into your ModSecurity directory:  </br>
 `$ sudo mv coreruleset-3.3.2/crs-setup.conf.example /etc/modsecurity/crs-setup.conf` </br>
   (Optional but recommended) Move the rules directory from the new directory to your ModSecurity directory:  </br>
