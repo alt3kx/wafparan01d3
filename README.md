@@ -158,17 +158,16 @@ $ sudo cp mods-available/rewrite.load mods-enabled/
 ```
 
 2. Restart Apache </br>
-`$ sudo systemctl restart apache2` <--FAIL! 
+```
+$ sudo systemctl restart apache2 <--FAIL! 
+```
 
 #### Add Virtualhosts for testing "Mocks"
-1. Add ports </br>
-Edit `/etc/apache2/ports.conf`, 
-
+1. Add ports, edit `/etc/apache2/ports.conf` </br>
 ```
 $ sudo /etc/apache2/ports.conf
 ```
 Copy & Paste the following code and save it. </br>
-
 ```
 Listen 8080
 Listen 18080
@@ -181,7 +180,6 @@ $ sudo touch 001-test.conf
 $ vim 001-test.conf
 ```
 Copy & Paste the following code and save it. </br>
-
 ```     
 <VirtualHost *:8080>
         ServerName test.domain:8080
@@ -204,7 +202,6 @@ $ sudo touch 002-moc.conf
 $ vim 002-moc.conf
 ```
 Copy & Paste the following code and save it. </br>
-
 ```
 <VirtualHost 127.0.0.1:18080>
 
