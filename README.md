@@ -224,6 +224,11 @@ $ sudo touch /etc/apache2/conf-enabled/sqlrules.conf
 ```
 $ sudo service apache2 reload
 ```
+### Test your FE and BE (mock)
+```
+$ curl -i -k -s -XGET https://localhost:8080/
+$ curl -i -k -s -XGET https://localhost:18080/
+```
 
 ### How do I use it 
 For help you can make use of the `help` option. The basic usage is to pass diferent arguments defined. </br>
