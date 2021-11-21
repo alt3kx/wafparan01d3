@@ -186,6 +186,11 @@ _(()((_|(_)(_) _((_)_\((_)_ ((_|(_)_ _(_/( /  (_) (_)_| |__ (_)
 `                                                                      
 ```
 ### Demos 
+You can try `wafparan01d3.sh` by running the demo environment that deploys WAF ModSecurity & 'Mock' using latest OWASP Core Rule Set `CRS 3.3.2` and `wafparan01d3.sh` evaluating ModSecurity paranoia levels easyble customizable. 
+
+The detault payload avaiable was called `mysql_gosecure.txt` due the latest research "A Scientific Notation Bug in MySQL left AWS WAF Clients Vulnerable to SQL Injection" from gotsecure available here https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bug-in-mysql-left-aws-waf-clients-vulnerable-to-sql-injection/ 
+
+
 
 
 
