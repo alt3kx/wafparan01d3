@@ -235,7 +235,7 @@ For help you can make use of the `help` option. The basic usage is to pass difer
 Example: </br>
 
 ```
-$ sudo python3 wafparan0id3.py --help  
+$ sudo python3 wafparan0id3.py -h
 
            (                                  )   ) (       )  
  (  (      ))\ )          ) (      )        ( /(( /( )\ ) ( /(  
@@ -246,7 +246,7 @@ _(()((_|(_)(_) _((_)_\((_)_ ((_|(_)_ _(_/( /  (_) (_)_| |__ (_)
  \_/\_/\__,_|_| | .__/\__,_|_| \__,_|_||_| \__/ |_|\__,_|___/   
                 |_|                                             
 
-                    ~ WAFPARANO1D3 : v1.0 ~
+                    ~ WAFPARANO1D3 : v1.1 ~
      The Web Application Firewall Paranoia Level Test Tool.
     
 [*] Checking https://example.org
@@ -255,13 +255,14 @@ _(()((_|(_)(_) _((_)_\((_)_ ((_|(_)_ _(_/( /  (_) (_)_| |__ (_)
 `                                                                      
 ```
 ### Demos 
-You can try `wafparan01d3.py` by running the demo environment that deploys WAF ModSecurity & 'Mock' using latest OWASP Core Rule Set `CRS 3.3.2` and `wafparan01d3.sh` evaluating ModSecurity paranoia levels easyble customizable. 
+You can try `wafparan01d3.py` by running the demo environment that deploys WAF ModSecurity & 'Mock' using latest OWASP Core Rule Set `CRS 3.3.2` and `wafparan01d3.py` evaluating ModSecurity paranoia levels easyble customizable. 
 
 To run the demo enviroment: 
 
 ```
 $ git clone https://github.com/alt3kx/wafparan01d3.git
 $ cd wafparan01d3
+$ python3 wafparan01d3.py -help 
 ```
 
 Gifs images here 
