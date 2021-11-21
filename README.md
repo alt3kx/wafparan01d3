@@ -104,7 +104,8 @@ The second file path should be wherever you moved the /rules directory.  </br>
 7. Edit /etc/apache2/apache2.conf  </br>
 `$ sudo vim /etc/apache2/apache2.conf`
 
-```     Include /etc/modsecurity/modsecurity.conf
+```     
+        Include /etc/modsecurity/modsecurity.conf
         Include /etc/modsecurity/crs/crs-setup.conf
         Include /etc/modsecurity/crs/rules/*.conf 
 ```
@@ -121,7 +122,7 @@ $ sudo cp mods-available/rewrite.load mods-enabled/
 ```
 
 2. Restart Apache </br>
-`$ sudo systemctl restart apache2`
+`$ sudo systemctl restart apache2` <--FAIL! 
 
 #### Add Virtualhosts for testing "Mocks"
 1. Add ports </br>
