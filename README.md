@@ -245,7 +245,7 @@ For help you can make use of the `help` option. The basic usage is to pass difer
 Example: </br>
 
 ```
-$ sudo python3 wafparan0id3.py -h
+$ sudo python3 wafparan01d3.py -h 
 
            (                                  )   ) (       )  
  (  (      ))\ )          ) (      )        ( /(( /( )\ ) ( /(  
@@ -258,10 +258,24 @@ _(()((_|(_)(_) _((_)_\((_)_ ((_|(_)_ _(_/( /  (_) (_)_| |__ (_)
 
                     ~ WAFPARANO1D3 : v1.1 ~
      The Web Application Firewall Paranoia Level Test Tool.
-    
-[*] Checking https://example.org
-[~] Number of requests: 2
-`                                                                      
+
+
+usage: wafparan01d3.py [-h] [--run [_RUN]] [--debug [_DEBUG]] [--pl [_PARANOIALEVEL ...]] [--proxy [_PROXY]] [--payload [_PAYLOAD]] [--rules-remove [_RULESREMOVE]] [--log [_LOG]] [--domain [_DOMAIN]] [--conf-file [_CONF_FILE]]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --run [_RUN]          Run script
+  --debug [_DEBUG]      Debug mode
+  --pl [_PARANOIALEVEL ...]
+                        Define paranoia level Ex. -pl 2
+  --proxy [_PROXY]      Define Proxy. Ex: http://127.0.0.1:8081
+  --payload [_PAYLOAD]  Define payload file. Ex. --payload payload2.txt
+  --rules-remove [_RULESREMOVE]
+                        Define rules remove file. Ex. --rules-remove rules1.txt
+  --log [_LOG]          Define path of the log file. Ex. --log /var/log/apache/paranoid.log
+  --domain [_DOMAIN]    Define your domain. Ex. --domain example.domain:8080
+  --conf-file [_CONF_FILE]
+                        Define configuration file Ex. REQUEST-901-INITIALIZATION.conf                                                                 
 ```
 ### Demos 
 You can try `wafparan01d3.py` by running the VM environment that deploys WAF ModSecurity & 'Mock' using latest OWASP Core Rule Set `CRS 3.3.2` and `wafparan01d3.py` evaluating ModSecurity paranoia levels easyble customizable. 
