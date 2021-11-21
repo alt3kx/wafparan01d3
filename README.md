@@ -170,7 +170,12 @@ Listen 18080
 ```
 
 2. Go to `/etc/apache2/sites-enabled`, create the file `001-test.conf` </br>
-Copy & Paste the following code. </br>
+```
+$ cd /etc/apache2/sites-enabled/
+$ sudo touch 001-test.conf
+$ vim 001-test.conf
+```
+Copy & Paste the following code and save it. </br>
 
 ```     
 <VirtualHost *:8080>
@@ -188,7 +193,12 @@ Copy & Paste the following code. </br>
 ```
 
 3. Go to `/etc/apache2/sites-enabled`, create the file `002-moc.conf` </br>
-Copy & Paste the following code. </br>
+```
+$ cd /etc/apache2/sites-enabled/
+$ sudo touch 002-moc.conf
+$ vim 002-moc.conf
+```
+Copy & Paste the following code and save it. </br>
 
 ```
 <VirtualHost 127.0.0.1:18080>
@@ -200,13 +210,18 @@ Copy & Paste the following code. </br>
         RewriteRule ^(.*)$ $1 [R=200,L]
 </VirtualHost>
 ```
-
 4. Restart apache </br>
-`$ sudo systemctl restart apache2` </br>
+```
+$ sudo systemctl restart apache2
+```
 5. Create the file sqlrules.conf inside of /etc/apache2/conf-enabled </br>
-`$ sudo touch /etc/apache2/conf-enabled/sqlrules.conf`
-6. Reload Apache </br>
-`$ sudo service apache2 reload`
+```
+$ sudo touch /etc/apache2/conf-enabled/sqlrules.conf
+```
+6. Reload Apache 
+```
+$ sudo service apache2 reload
+```
 
 ### How do I use it 
 For help you can make use of the `help` option. The basic usage is to pass diferent arguments defined. </br>
