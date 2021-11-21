@@ -27,12 +27,14 @@ Reference: https://coreruleset.org/20211028/working-with-paranoia-levels/
 - The PoC below provide de basic installation and configuration from scratch and re-use byself the current WAF deployed by settting a basic "Mock" and simulate the backend.
 - The detault payloads avaiable was called `mysql_gosecure.txt` based on the research "A Scientific Notation Bug in MySQL left AWS WAF Clients Vulnerable to SQL Injection" from gosecure available here https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bug-in-mysql-left-aws-waf-clients-vulnerable-to-sql-injection/ evaluating our WAFs in their different levels of paranoia either in a default configuration or by disabling different rules / IDs in a staggered and quick way.
 
+![gosecure](https://user-images.githubusercontent.com/3140111/142755697-50db1851-5c28-4ccd-a94d-4bbb4a26a90c.png)
+
 ### Approach
 
-- `Pentester`: GreyBox scope with limited access to WAF Linux box using a "shell" with privileges to start/reload and edit WAF Apache config files on DEV/STG/TEST enviroments sending diferent payloads.</br>
-- `Secutity Officers`: Take the best desicion to apply the level of WAF paranoid for each solution in your organization. </br>
-- `Blueteamers`: Rule enforcement, best alerting , less false positive/negative results in your organization. </br>
-- `Integrators`: Define the adequate level of WAF paranoia quickly customizing rules or creating virtual patches. </br>
+- `Pentesters`: GreyBox scope with limited access to WAF Linux box using a "shell" with privileges to start/reload and edit WAF Apache config files on DEV/STG/TEST enviroments sending diferent payloads.</br>
+- `Secutity Officers`: Take the best decision to apply the level of WAF paranoia for each solution in your organization. </br>
+- `Blueteamers`: Rule enforcement, best alerting , less false positive results in your organization. </br>
+- `Integrators`: Perform a depper troubheshooting  and define the adequate level of WAF paranoia quickly customizing rules or creating virtual patches. </br>
 
 ### Proof of Concept: Based on Ubuntu 20.04.3 and OWASP Core Rule Set (CRS) v3.3.2 
 Reference: https://www.inmotionhosting.com/support/server/apache/install-modsecurity-apache-module/ </br>
