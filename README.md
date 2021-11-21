@@ -83,7 +83,7 @@ alex@ubuntu:~$ `</br>
   (Optional but recommended) Move the rules directory from the new directory to your ModSecurity directory:  </br>
 `$ sudo mv coreruleset-3.3.2/rules/ /etc/modsecurity/`
 5. Edit your Apache security2.conf file to ensure it’ll load ModSecurity rules:  </br>
-`$ sudo vim /etc/apache2/mods-enabled/security2.conf` <-- where is this file ? 
+`$ sudo vim /etc/apache2/mods-enabled/security2.conf` 
 
 ```     IncludeOptional /etc/modsecurity/crs-setup.conf
         IncludeOptional /etc/modsecurity/rules/*.conf
@@ -98,7 +98,7 @@ The second file path should be wherever you moved the /rules directory.  </br>
 
 ```     Include /etc/modsecurity/modsecurity.conf
         Include /etc/modsecurity/crs/crs-setup.conf
-        Include /etc/modsecurity/crs/rules/*.conf `
+        Include /etc/modsecurity/crs/rules/*.conf 
 ```
 
 #### Apache Load Modules Rewrite & Proxy
