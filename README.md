@@ -58,7 +58,7 @@ Reference: https://www.inmotionhosting.com/support/server/apache/install-modsecu
 #### Configure ModSecurity 
 1. Copy and rename the file: </br>
 `$ sudo cp /etc/modsecurity/modsecurity.conf-recommended /etc/modsecurity/modsecurity.conf` </br>
-Next, change the ModSecurity detection mode. First, move into the `/etc/modsecurity` folder: </br>
+Next, change the ModSecurity detection mode. First, move into the `/etc/modsecurity` folder </br>
 2. Edit the ModSecurity configuration file with vi, vim, emacs, or nano. </br>
 `$ sudo vim /etc/modsecurity/modsecurity.conf`
 3. Near the top of the file, you’ll see `SecRuleEngine DetectionOnly`. Change `DetectionOnly` to `On`. </br>
