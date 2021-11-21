@@ -109,6 +109,8 @@ The second file path should be wherever you moved the /rules directory.  </br>
         Include /etc/modsecurity/crs/rules/*.conf 
 ```
 
+![modsec3](https://user-images.githubusercontent.com/3140111/142754094-ed6b7723-68c9-4a35-a484-1c38be78a97c.png)
+
 #### Apache Load Modules Rewrite & Proxy
 1. Copy the following modules. Enable Proxy and Rewrite module.  </br>
 ``` 
