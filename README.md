@@ -250,7 +250,6 @@ _(()((_|(_)(_) _((_)_\((_)_ ((_|(_)_ _(_/( /  (_) (_)_| |__ (_)
      The Web Application Firewall Paranoia Level Test Tool.
     
 [*] Checking https://example.org
-[+] The site https://example.org is behind Edgecast (Verizon Digital Media) WAF.
 [~] Number of requests: 2
 `                                                                      
 ```
