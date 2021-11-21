@@ -110,7 +110,7 @@ ProvidedChecksum
 
 3. Uncompress the zip file. </br>
 ```
-$ sudo unzip v3.3.2.zip
+$ unzip v3.3.2.zip
 ```
 4. Move the CRS setup file from the new directory into your ModSecurity directory:  </br>
 ```
