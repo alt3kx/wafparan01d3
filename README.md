@@ -125,11 +125,20 @@ $ sudo mv coreruleset-3.3.2/rules/ /etc/modsecurity/
 $ sudo vim /etc/apache2/mods-enabled/security2.conf
 ```
 
-```     IncludeOptional /etc/modsecurity/crs-setup.conf
+```    <IfModule security2_module>
+        # Default Debian dir for modsecurity's persistent data
+        SecDataDir /var/cache/modsecurity
+
+        # Include all the *.conf files in /etc/modsecurity.
+        # Keeping your local configuration in that directory
+        # will allow for an easy upgrade of THIS file and
+        # make your life easier
         IncludeOptional /etc/modsecurity/rules/*.conf
 
         # Include OWASP ModSecurity CRS rules if installed
         #IncludeOptional /usr/share/modsecurity-crs/*.load
+</IfModule>
+
 ```
 ![modsec2](https://user-images.githubusercontent.com/3140111/142753907-f70dec0a-6332-40a8-980f-fb54f22429f5.png)
 
