@@ -139,7 +139,7 @@ The second file path should be wherever you moved the /rules directory.  </br>
 ```
 $ sudo vim /etc/apache2/apache2.conf
 ```
-
+Copy & Paste the following code and save it. </br>
 ```     
         Include /etc/modsecurity/modsecurity.conf
         Include /etc/modsecurity/crs/crs-setup.conf
@@ -165,7 +165,7 @@ $ sudo systemctl restart apache2 <--FAIL!
 #### Add Virtualhosts for testing "Mocks"
 1. Add ports, edit `/etc/apache2/ports.conf` </br>
 ```
-$ sudo /etc/apache2/ports.conf
+$ sudo vim /etc/apache2/ports.conf
 ```
 Copy & Paste the following code and save it. </br>
 ```
