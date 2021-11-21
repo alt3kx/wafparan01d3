@@ -224,7 +224,7 @@ $ sudo touch /etc/apache2/conf-enabled/sqlrules.conf
 ```
 $ sudo service apache2 reload
 ```
-### Test your FE and BE (mock)
+#### Test your FE and BE (mock)
 ```
 $ curl -i -k -s -XGET https://localhost:8080/
 $ curl -i -k -s -XGET https://localhost:18080/
@@ -257,10 +257,14 @@ _(()((_|(_)(_) _((_)_\((_)_ ((_|(_)_ _(_/( /  (_) (_)_| |__ (_)
 ### Demos 
 You can try `wafparan01d3.py` by running the demo environment that deploys WAF ModSecurity & 'Mock' using latest OWASP Core Rule Set `CRS 3.3.2` and `wafparan01d3.sh` evaluating ModSecurity paranoia levels easyble customizable. 
 
-Gif
+To run the demo enviroment: 
+
 ```
+$ git clone https://github.com/alt3kx/wafparan01d3.git
+$ cd wafparan01d3
 ```
 
+Gifs images here 
 
 ### Authors
 Alex Hernandez aka <em><a href="https://twitter.com/_alt3kx_" rel="nofollow">(@\_alt3kx\_)</a></em></br>
