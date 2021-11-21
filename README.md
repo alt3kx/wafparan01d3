@@ -125,7 +125,8 @@ $ sudo mv coreruleset-3.3.2/rules/ /etc/modsecurity/
 $ sudo vim /etc/apache2/mods-enabled/security2.conf
 ```
 
-```    <IfModule security2_module>
+```    
+<IfModule security2_module>
         # Default Debian dir for modsecurity's persistent data
         SecDataDir /var/cache/modsecurity
 
