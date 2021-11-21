@@ -278,14 +278,14 @@ optional arguments:
                         Define configuration file Ex. REQUEST-901-INITIALIZATION.conf                                                                 
 ```
 ### Demos 
-You can try `wafparan01d3.py` by running the VM environment that deploys WAF ModSecurity & 'Mock' using latest OWASP Core Rule Set `CRS 3.3.2` and `wafparan01d3.py` evaluating ModSecurity paranoia levels easyble customizable. 
+You can try `wafparan01d3.py` by running the VM environment (Ubuntu) that deploys WAF ModSecurity & 'Mock' using latest OWASP Core Rule Set `CRS 3.3.2` and `wafparan01d3.py` evaluating ModSecurity paranoia levels easyble customizable. 
 
-To run the demo enviroment: 
+To run: 
 
 ```
 $ git clone https://github.com/alt3kx/wafparan01d3.git
 $ cd wafparan01d3
-$ python3 wafparan01d3.py -help 
+$ sudo python3 wafparan01d3.py -help 
 ```
 
 Gifs images here 
