@@ -236,8 +236,8 @@ $ sudo service apache2 reload
 ```
 #### Test your FE and BE (mock)
 ```
-$ curl -i -k -s -XGET https://localhost:8080/
-$ curl -i -k -s -XGET https://localhost:18080/
+$ curl -i -k -s -XGET http://localhost:8080/
+$ curl -i -k -s -XGET http://localhost:18080/
 ```
 
 ### How do I use it 
