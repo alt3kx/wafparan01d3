@@ -285,7 +285,7 @@ To run:
 ```
 $ git clone https://github.com/alt3kx/wafparan01d3.git
 $ cd wafparan01d3
-$ sudo python3 wafparan01d3.py -help 
+$ sudo python3 wafparan01d3.py --help 
 ```
 
 Gifs images here 
