@@ -97,6 +97,8 @@ ProvidedChecksum </br>
         # Include OWASP ModSecurity CRS rules if installed
         #IncludeOptional /usr/share/modsecurity-crs/*.load
 ```
+![modsec2](https://user-images.githubusercontent.com/3140111/142753907-f70dec0a-6332-40a8-980f-fb54f22429f5.png)
+
 6. Ensure both the default ModSecurity and new CRS configuration files are listed. The first line conf file path may already be included. 
 The second file path should be wherever you moved the /rules directory.  </br>
 7. Edit /etc/apache2/apache2.conf  </br>
