@@ -41,28 +41,46 @@ Reference: https://www.inmotionhosting.com/support/server/apache/install-modsecu
 
 #### Initial installation 
 1. Update software repos: </br>
-`$ sudo apt update -y && sudo apt dist-upgrade -y`
+```
+$ sudo apt update -y && sudo apt dist-upgrade -y
+```
 2. Install Essentials: </br>
-`$ sudo apt-get install build-essential -y`
+```
+$ sudo apt-get install build-essential -y
+```
 3. Install apache2 for ubuntu (if it is not installed): </br>
-`$ sudo apt-get install apache2 -y`
+```
+$ sudo apt-get install apache2 -y
+```
 4. Download and install the ModSecurity Apache module: </br>
-`$ sudo apt install libapache2-mod-security2 -y`
+```
+$ sudo apt install libapache2-mod-security2 -y
+```
 5. Install curl for ubuntu (if it is not installed): </br>
-`$ sudo apt-get install curl vim gridsite-clients -y`
+```
+$ sudo apt-get install curl vim gridsite-clients -y
+```
 6. Restart the Apache service: </br>
-`$ sudo systemctl restart apache2`
+```
+$ sudo systemctl restart apache2
+```
 7. Ensure the installed software version is at least 2.9.x: </br>
-`$ sudo apt-cache show libapache2-mod-security2`
+```
+$ sudo apt-cache show libapache2-mod-security2
+```
 
 ![install](https://user-images.githubusercontent.com/3140111/142753216-8e03966a-64b6-4076-afa8-1677a43241bf.png)
 
 #### Configure ModSecurity 
 1. Copy and rename the file: </br>
-`$ sudo cp /etc/modsecurity/modsecurity.conf-recommended /etc/modsecurity/modsecurity.conf` </br>
+```
+$ sudo cp /etc/modsecurity/modsecurity.conf-recommended /etc/modsecurity/modsecurity.conf
+```
 Next, change the ModSecurity detection mode. First, move into the `cd /etc/modsecurity` folder </br>
 2. Edit the ModSecurity configuration file with vi, vim, emacs, or nano. </br>
-`$ sudo vim /etc/modsecurity/modsecurity.conf`
+```
+$ sudo vim /etc/modsecurity/modsecurity.conf
+```
 3. Near the top of the file, you’ll see `SecRuleEngine DetectionOnly`. Change `DetectionOnly` to `On`. </br>
 
   Original value: `SecRuleEngine DetectionOnly` </br>
@@ -72,7 +90,9 @@ Next, change the ModSecurity detection mode. First, move into the `cd /etc/modse
 
 4. Save changes. </br>
 5. Restart Apache: </br>
-`$ sudo systemctl restart apache2`
+```
+$ sudo systemctl restart apache2
+```
 
 #### Download OWASP Core Rule Set 
 1. Download the latest CRS from CoreRuleSet.org/installation </br>
