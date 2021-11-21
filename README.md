@@ -43,16 +43,15 @@ Reference: https://www.inmotionhosting.com/support/server/apache/install-modsecu
 2. Install Essentials: </br>
 `$ sudo apt-get install build-essential -y`
 3. Install apache2 for ubuntu (if it is not installed): </br>
-`$ sudo apt-get install apache2`
+`$ sudo apt-get install apache2 -y`
 4. Download and install the ModSecurity Apache module: </br>
-`$ sudo apt install libapache2-mod-security2`
+`$ sudo apt install libapache2-mod-security2 -y`
 5. Install curl for ubuntu (if it is not installed): </br>
-`$ sudo apt-get install curl vim gridsite-clients`
-6. Type `Y`.
-7. Restart the Apache service: </br>
+`$ sudo apt-get install curl vim gridsite-clients -y`
+6. Restart the Apache service: </br>
 `$ sudo systemctl restart apache2`
-8. Ensure the installed software version is at least 2.9: </br>
-`$ apt-cache show libapache2-mod-security2 `
+7. Ensure the installed software version is at least 2.9.x: </br>
+`$ sudo apt-cache show libapache2-mod-security2 `
 
 #### Configure ModSecurity 
 1. Copy and rename the file: </br>
