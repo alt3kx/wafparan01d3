@@ -238,7 +238,7 @@ Copy & Paste the following code and save it. </br>
 ```
 $ sudo systemctl restart apache2
 ```
-5. Create the file sqlrules.conf inside of /etc/apache2/conf-enabled </br>
+5. Create the file wafparan01d3_rulesremove.conf inside of /etc/apache2/conf-enabled </br>
 ```
 $ touch /etc/apache2/conf-enabled/wafparan01d3_rulesremove.conf
 ```
@@ -248,7 +248,17 @@ $ sudo service apache2 reload
 ```
 #### Test your FE and BE (mock)
 ```
-$ curl -i -k -s -XGET http://localhost:8080/
+If you are using domain modify the following lines  
+
+Windows:
+C:\Windows\System32\drivers\etc\hosts
+192.168.56.106 test.domain
+
+Linux: 
+/etc/hosts
+192.168.56.106 test.domain
+
+$ curl -i -k -s -XGET http://test.domain:8080/
 $ curl -i -k -s -XGET http://localhost:18080/
 ```
 ### How do I use it 
