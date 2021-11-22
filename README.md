@@ -420,15 +420,16 @@ $ sudo python3 wafparan01d3.py --help
 ```
 $ sudo python3 wafparan01d3.py --run
 ```
-
+![wafparan01d3_001](https://user-images.githubusercontent.com/3140111/142825261-cecb5d7f-6cec-440e-874c-45f062c02168.gif)
 
 ```
 $ sudo python3 wafparan01d3.py --run --debug --proxy http://192.168.56.1:8081
 ```
-
+Gif here
 ```
 $ sudo python3 wafparan01d3.py --run --debug --pl 1 2 --proxy http://192.168.56.1:8081 --log test.log --domain vulnerable.domain:8080 --time-sleep-request 1 --time-sleep 1 --rules-remove my_rules_remove.txt --payload my_payload.txt
 ```
+![wafparan01d3_003](https://user-images.githubusercontent.com/3140111/142825338-ee032136-4da9-40a5-963f-bf5a3f34690a.gif)
 
 
 ### Authors
