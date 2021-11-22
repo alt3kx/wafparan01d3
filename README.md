@@ -210,6 +210,8 @@ Listen 18080
         Listen 443
 </IfModule>
 ```
+![ports2](https://user-images.githubusercontent.com/3140111/142804122-68fa4b21-2e82-4ef1-8fb8-1386ebd4c2c3.png)
+
 2. Go to `/etc/apache2/sites-enabled`, create the file `001-test.conf` </br>
 ```
 $ cd /etc/apache2/sites-enabled/
