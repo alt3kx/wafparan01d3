@@ -155,7 +155,9 @@ $ sudo vim /etc/apache2/mods-enabled/security2.conf
 </IfModule>
 
 ```
-![modsec2](https://user-images.githubusercontent.com/3140111/142753907-f70dec0a-6332-40a8-980f-fb54f22429f5.png)
+![secmodule](https://user-images.githubusercontent.com/3140111/142803377-1463b5f9-0532-497e-9134-52e7f52a2555.png)
+
+
 
 6. Ensure both the default ModSecurity and new CRS configuration files are listed. The first line conf file path may already be included. 
 The second file path should be wherever you moved the /rules directory.  </br>
