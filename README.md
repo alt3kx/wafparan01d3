@@ -426,7 +426,7 @@ $ sudo python3 wafparan01d3.py --run
 ```
 $ sudo python3 wafparan01d3.py --run --debug --proxy http://192.168.56.1:8081
 ```
-Gif here
+![wafparan01d3_002](https://user-images.githubusercontent.com/3140111/142826789-f293ab85-9e79-4c1b-998b-da96bd938369.gif) 
 ```
 $ sudo python3 wafparan01d3.py --run --debug --pl 1 2 --proxy http://192.168.56.1:8081 --log test.log --domain vulnerable.domain:8080 --time-sleep-request 1 --time-sleep 1 --rules-remove my_rules_remove.txt --payload my_payload.txt
 ```
