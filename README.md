@@ -257,15 +257,15 @@ $ sudo service apache2 reload
 ```
 #### Test your FE and BE (mock)
 ```
-If you are using domain modify the following lines  
+Must be specify a domain , edit the following lines  
 
 Windows:
 C:\Windows\System32\drivers\etc\hosts
-192.168.56.106 test.domain <-- add this line 
+192.168.56.106 test.domain <-- add this line and specify your IP address  
 
 Linux: 
 /etc/hosts
-192.168.1.23 test.domain <-- add this line 
+192.168.1.23 test.domain <-- add this line and specify your IP address 
 
 $ curl -i -k -s -XGET http://test.domain:8080/
 HTTP/1.1 200 OK
