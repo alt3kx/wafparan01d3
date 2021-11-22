@@ -433,6 +433,8 @@ $ sudo python3 wafparan01d3.py --run --debug --pl 1 2 --proxy http://192.168.56.
 ```
 ![wafparan01d3_003](https://user-images.githubusercontent.com/3140111/142825338-ee032136-4da9-40a5-963f-bf5a3f34690a.gif)
 
+## WAF Rule Scientific Notation
+https://github.com/mindhack03d/WAF-Rule-Scientific-Notation
 
 ### Authors
 Alex Hernandez aka <em><a href="https://twitter.com/_alt3kx_" rel="nofollow">(@\_alt3kx\_)</a></em></br>
