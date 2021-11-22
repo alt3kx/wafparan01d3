@@ -68,7 +68,7 @@ $ sudo apt install libapache2-mod-security2 -y
 ```
 5. Install curl for ubuntu (if it is not installed): </br>
 ```
-$ sudo apt-get install curl vim gridsite-clients -y
+$ sudo apt-get install curl vim gridsite-clients net-tools -y
 ```
 6. Restart the Apache service: </br>
 ```
@@ -78,7 +78,6 @@ $ sudo systemctl restart apache2
 ```
 $ sudo apt-cache show libapache2-mod-security2
 ```
-
 ![install](https://user-images.githubusercontent.com/3140111/142753216-8e03966a-64b6-4076-afa8-1677a43241bf.png)
 
 #### Configure ModSecurity 
@@ -152,8 +151,6 @@ $ sudo vim /etc/apache2/mods-enabled/security2.conf
 
 ```
 ![secmodule](https://user-images.githubusercontent.com/3140111/142803377-1463b5f9-0532-497e-9134-52e7f52a2555.png)
-
-
 
 6. Ensure both the default ModSecurity and new CRS configuration files are listed. The first line conf file path may already be included. 
 The second file path should be wherever you moved the /rules directory.  </br>
@@ -318,7 +315,6 @@ in the server error log.</p>
 <hr>
 <address>Apache/2.4.41 (Ubuntu) Server at localhost Port 18080</address>
 </body></html>
-
 
 ```
 ### How do I use it 
