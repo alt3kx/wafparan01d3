@@ -436,5 +436,5 @@ $ sudo python3 wafparan01d3.py --run --debug --pl 1 2 --proxy http://192.168.56.
 
 ### Authors
 Alex Hernandez aka <em><a href="https://twitter.com/_alt3kx_" rel="nofollow">(@\_alt3kx\_)</a></em></br>
-Jesus Huerta aka <em><a href="https://github.com/mindhack03d" </em> </a>
+Jesus Huerta aka <em><a href="https://github.com/mindhack03d"> </em> </a>
 
