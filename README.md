@@ -17,9 +17,9 @@
     <img src="https://img.shields.io/badge/Python-3.x/2.x-green.svg">
   </a>
   <a href="https://github.com/alt3kx/wafparan01d3/releases">
-    <img src="https://img.shields.io/badge/Version-v1.1.0%20(stable)-blue.svg">
+    <img src="https://img.shields.io/badge/Version-v1.1%20(stable)-blue.svg">
   </a>
-  <a href="https://github.com/alt3kx/wafparan01d3/blob/master/LICENSE">
+  <a href="https://github.com/alt3kx/wafparan01d3/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/License-BSD%203%20Clause-orange.svg">
   </a> 
 
