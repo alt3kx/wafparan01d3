@@ -20,7 +20,7 @@
     <img src="https://img.shields.io/badge/Version-v1.1%20(stable)-blue.svg">
   </a>
   <a href="https://github.com/alt3kx/wafparan01d3/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/License-GNU%20General%20Public%20License%20v3.0-blue">
+    <img src="https://img.shields.io/badge/License-GNU%20General%20Public%20License%20v3.0-orange">
   </a> 
 
 </p>
