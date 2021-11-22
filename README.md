@@ -165,9 +165,12 @@ $ sudo vim /etc/apache2/apache2.conf
 ```
 Copy & Paste the following code and save it. </br>
 ```     
+# Include list of ports to listen on
+Include ports.conf
+
 Include /etc/modsecurity/modsecurity.conf
 Include /etc/modsecurity/crs/crs-setup.conf
-Include /etc/modsecurity/crs/rules/*.conf 
+Include /etc/modsecurity/crs/rules/*.conf
 ```
 Gif image here
 
