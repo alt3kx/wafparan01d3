@@ -357,45 +357,45 @@ optional arguments:
 - sudo python3 wafparan01d3.py -h 
 	- show the help message
 
--sudo python3 wafparan01d3.py --run
+- sudo python3 wafparan01d3.py --run
 	- run the script with default options.
 
--sudo python3 wafparan01d3.py --run --debug
+- sudo python3 wafparan01d3.py --run --debug
 	- Print every line on console.
 	
--sudo python3 wafparan01d3.py --run --pl 1
+- sudo python3 wafparan01d3.py --run --pl 1
 	- Run the script in assigned Paranoia Level.
 	- By default runs on Paranoia Level 1, 2, 3, 4
 
--sudo python3 wafparan01d3.py --run --payload file_payload2.txt
+- sudo python3 wafparan01d3.py --run --payload file_payload2.txt
 	- Define the payload file that you want to send to WAF.
 	- By default takes the file mysql_gosecure.txt
 
--sudo python3 wafparan01d3.py --run --rules-remove rules_removex.txt
+- sudo python3 wafparan01d3.py --run --rules-remove rules_removex.txt
 	- Define the rules that you want to remove on GWAF.
 	- Example of the file: 
 		- Default 920000 920001 920002
 	- By default takes the files: rules_remove1.txt, rules_remove2.txt, rules_remove3.txt, rules_remove4.txt
 
--sudo python3 wafparan01d3.py --run --log /home/waf_user/paranoia.log
+- sudo python3 wafparan01d3.py --run --log /home/waf_user/paranoia.log
 	- Define LOG File.
 	- By default print the log on paranoia_debug.log
 
--sudo python3 wafparan01d3.py --run --domain mydomain.test.com
+- sudo python3 wafparan01d3.py --run --domain mydomain.test.com
 	- Define Domain of Front End WAF.
 	- By default runs over domain domain.test:8080
 	
--sudo python3 wafparan01d3.py --run --conf-file /opt/modsecurity/crs/rules/INITIALIZATION.conf
+- sudo python3 wafparan01d3.py --run --conf-file /opt/modsecurity/crs/rules/INITIALIZATION.conf
 	- Define the configuration file to update the Paranoia Level
 	- By default takes /etc/modsecurity/crs/rules/REQUEST-901-INITIALIZATION.conf
 
--sudo python3 wafparan01d3.py --run --time-sleep 3
+- sudo python3 wafparan01d3.py --run --time-sleep 3
 	- Define the time to sleep per Paranoia Level.
 
--sudo python3 wafparan01d3.py --run --time-sleep-request 2
+- sudo python3 wafparan01d3.py --run --time-sleep-request 2
 	- Define the time to sleep per request send to WAF.
 
--sudo python3 wafparan01d3.py --desc
+- sudo python3 wafparan01d3.py --desc
 	- Print the description of the script and the authors.
 
 ### Demos 
