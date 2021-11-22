@@ -323,20 +323,20 @@ Example: </br>
 ```
 $ sudo python3 wafparan01d3.py -h 
 
-           (                                  )   ) (       )  
- (  (      ))\ )          ) (      )        ( /(( /( )\ ) ( /(  
- )\))(  ( /(()/( `  )  ( /( )(  ( /(  (     )\())\()|()/( )\()) 
-((_)()\ )(_))(_))/(/(  )(_)|()\ )(_)) )\ ) ((_)((_)\ ((_)|(_)\  
-_(()((_|(_)(_) _((_)_\((_)_ ((_|(_)_ _(_/( /  (_) (_)_| |__ (_) 
-\ V  V / _` |  _| '_ \) _` | '_/ _` | ' \)) () || |/ _` ||_ \   
- \_/\_/\__,_|_| | .__/\__,_|_| \__,_|_||_| \__/ |_|\__,_|___/   
-                |_|                                             
+           (                                  )   ) (       )
+ (  (      ))\ )          ) (      )        ( /(( /( )\ ) ( /(
+ )\))(  ( /(()/( `  )  ( /( )(  ( /(  (     )\())\()|()/( )\())
+((_)()\ )(_))(_))/(/(  )(_)|()\ )(_)) )\ ) ((_)((_)\ ((_)|(_)\
+_(()((_|(_)(_) _((_)_\((_)_ ((_|(_)_ _(_/( /  (_) (_)_| |__ (_)
+\ V  V / _` |  _| '_ \) _` | '_/ _` | ' \)) () || |/ _` ||_ \
+ \_/\_/\__,_|_| | .__/\__,_|_| \__,_|_||_| \__/ |_|\__,_|___/
+                |_|
 
                     ~ WAFPARANO1D3 : v1.1 ~
      The Web Application Firewall Paranoia Level Test Tool.
 
-
 usage: wafparan01d3.py [-h] [--run [_RUN]] [--debug [_DEBUG]] [--pl [_PARANOIALEVEL ...]] [--proxy [_PROXY]] [--payload [_PAYLOAD]] [--rules-remove [_RULESREMOVE]] [--log [_LOG]] [--domain [_DOMAIN]] [--conf-file [_CONF_FILE]]
+                       [--time-sleep [_TIME_TO_SLEEP]] [--time-sleep-request [_TIME_TO_SLEEP_REQUEST]] [--desc [_DESC]] [--output-desc [_OUTPUT_DESC]]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -348,10 +348,18 @@ optional arguments:
   --payload [_PAYLOAD]  Define payload file. Ex. --payload payload2.txt
   --rules-remove [_RULESREMOVE]
                         Define rules remove file. Ex. --rules-remove rules1.txt
-  --log [_LOG]          Define path of the log file. Ex. --log /var/log/apache/wafparan01d3.log <-- check this! 
+  --log [_LOG]          Define path of the log file. Ex. --log /var/log/apache/wafparan01d3.log
   --domain [_DOMAIN]    Define your domain. Ex. --domain example.domain:8080
   --conf-file [_CONF_FILE]
-                        Define configuration file Ex. REQUEST-901-INITIALIZATION.conf                                                                 
+                        Define configuration file. Ex. --conf-file /opt/modsecurity/crs/rules/INITIALIZATION.conf
+  --time-sleep [_TIME_TO_SLEEP]
+                        Sleep time per PL. Ex. --time-sleep 3
+  --time-sleep-request [_TIME_TO_SLEEP_REQUEST]
+                        Sleep time per Request. Ex. --time-sleep-request 3
+  --desc [_DESC]        Description of the script and authors
+  --output-desc [_OUTPUT_DESC]
+                        Description of the output on console mode.
+                                                              
 ```
 
 - sudo python3 wafparan01d3.py -h 
