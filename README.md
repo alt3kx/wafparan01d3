@@ -361,6 +361,7 @@ optional arguments:
                         Description of the output on console mode.
                                                               
 ```
+### Optional Arguments 
 
 - sudo python3 wafparan01d3.py -h 
 	- show the help message
