@@ -418,6 +418,16 @@ $ sudo python3 wafparan01d3.py --help
 ```
 
 ```
+$ sudo python3 wafparan01d3.py --run
+```
+
+
+```
+$ sudo python3 wafparan01d3.py --run --debug --proxy http://192.168.56.1:8081
+```
+
+```
+$ sudo python3 wafparan01d3.py --run --debug --pl 1 2 --proxy http://192.168.56.1:8081 --log test.log --domain vulnerable.domain:8080 --time-sleep-request 1 --time-sleep 1 --rules-remove my_rules_remove.txt --payload my_payload.txt
 ```
 
 
