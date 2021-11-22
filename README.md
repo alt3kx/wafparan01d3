@@ -216,7 +216,7 @@ Listen 18080
 ```
 $ cd /etc/apache2/sites-enabled/
 $ sudo touch 001-test.conf
-$ vim 001-test.conf
+$ sudo vim 001-test.conf
 ```
 Copy & Paste the following code and save it. </br>
 ```     
@@ -237,7 +237,7 @@ Copy & Paste the following code and save it. </br>
 ```
 $ cd /etc/apache2/sites-enabled/
 $ sudo touch 002-moc.conf
-$ vim 002-moc.conf
+$ sudo vim 002-moc.conf
 ```
 Copy & Paste the following code and save it. </br>
 ```
