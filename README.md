@@ -186,7 +186,7 @@ $ sudo cp mods-available/rewrite.load mods-enabled/
 ```
 2. Restart Apache </br>
 ```
-$ sudo systemctl restart apache2 <--FAIL! 
+$ sudo systemctl restart apache2
 ```
 #### Add Virtualhosts for testing "Mocks"
 1. Add ports, edit `/etc/apache2/ports.conf` </br>
