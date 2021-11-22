@@ -174,7 +174,7 @@ Include /etc/modsecurity/modsecurity.conf
 Include /etc/modsecurity/crs/crs-setup.conf
 Include /etc/modsecurity/crs/rules/*.conf
 ```
-Gif image here
+![ports](https://user-images.githubusercontent.com/3140111/142803549-079b5c29-bb07-442e-9137-9abd8a16ce90.png)
 
 #### Apache Load Modules Rewrite & Proxy
 1. Copy the following modules. Enable Proxy and Rewrite module.  </br>
