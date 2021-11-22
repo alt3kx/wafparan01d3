@@ -121,15 +121,19 @@ ProvidedChecksum
 ```
 $ unzip v3.3.2.zip
 ```
-4. Move the CRS setup file from the new directory into your ModSecurity directory:  </br>
+4. To be created a directory on `/etc/modsecurity/crs`
 ```
-$ sudo mv coreruleset-3.3.2/crs-setup.conf.example /etc/modsecurity/crs-setup.conf
+$ sudo mkdir /etc/modsecurity/crs
+```
+5. Move the CRS setup file from the new directory into your ModSecurity directory:  </br>
+```
+$ sudo mv coreruleset-3.3.2/crs-setup.conf.example /etc/modsecurity/crs/crs-setup.conf
 ```
 - (Optional but recommended) Move the rules directory from the new directory to your ModSecurity directory:  </br>
 ```
-$ sudo mv coreruleset-3.3.2/rules/ /etc/modsecurity/
+$ sudo mv coreruleset-3.3.2/rules/ /etc/modsecurity/crs/
 ```
-5. Edit your Apache security2.conf file to ensure it’ll load ModSecurity rules:  </br>
+6. Edit your Apache security2.conf file to ensure it’ll load ModSecurity rules:  </br>
 ```
 $ sudo vim /etc/apache2/mods-enabled/security2.conf
 ```
