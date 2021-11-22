@@ -147,6 +147,7 @@ $ sudo vim /etc/apache2/mods-enabled/security2.conf
         # Keeping your local configuration in that directory
         # will allow for an easy upgrade of THIS file and
         # make your life easier
+        IncludeOptional /etc/modsecurity/crs-setup.conf
         IncludeOptional /etc/modsecurity/rules/*.conf
 
         # Include OWASP ModSecurity CRS rules if installed
