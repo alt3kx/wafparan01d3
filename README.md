@@ -240,7 +240,7 @@ $ sudo systemctl restart apache2
 ```
 5. Create the file sqlrules.conf inside of /etc/apache2/conf-enabled </br>
 ```
-$ sudo touch /etc/apache2/conf-enabled/sqlrules.conf
+$ touch /etc/apache2/conf-enabled/wafparan01d3_rulesremove.conf
 ```
 6. Reload Apache 
 ```
