@@ -264,14 +264,62 @@ If you are using domain modify the following lines
 
 Windows:
 C:\Windows\System32\drivers\etc\hosts
-192.168.56.106 test.domain
+192.168.56.106 test.domain <-- add this line 
 
 Linux: 
 /etc/hosts
-192.168.56.106 test.domain
+192.168.1.23 test.domain <-- add this line 
 
 $ curl -i -k -s -XGET http://test.domain:8080/
+HTTP/1.1 200 OK
+Date: Mon, 22 Nov 2021 06:31:41 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Content-Length: 571
+Content-Type: text/html; charset=iso-8859-1
+Vary: Accept-Encoding
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>200 OK</title>
+</head><body>
+<h1>OK</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator at 
+ [no address given] to inform them of the time this error occurred,
+ and the actions you performed just before this error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.4.41 (Ubuntu) Server at 127.0.0.1 Port 18080</address>
+</body></html>
+
 $ curl -i -k -s -XGET http://localhost:18080/
+HTTP/1.1 200 OK
+Date: Mon, 22 Nov 2021 06:27:17 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Content-Length: 571
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>200 OK</title>
+</head><body>
+<h1>OK</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator at 
+ [no address given] to inform them of the time this error occurred,
+ and the actions you performed just before this error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.4.41 (Ubuntu) Server at localhost Port 18080</address>
+</body></html>
+
+
 ```
 ### How do I use it 
 For help you can make use of the `help` option. The basic usage is to pass diferent arguments defined. </br>
