@@ -238,7 +238,7 @@ Copy & Paste the following code and save it. </br>
 ```
 $ sudo systemctl restart apache2
 ```
-5. Create the file wafparan01d3_rulesremove.conf inside of /etc/apache2/conf-enabled </br>
+5. Create the file `wafparan01d3_rulesremove.conf` inside of /etc/apache2/conf-enabled </br>
 ```
 $ touch /etc/apache2/conf-enabled/wafparan01d3_rulesremove.conf
 ```
