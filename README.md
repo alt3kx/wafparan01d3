@@ -354,6 +354,15 @@ optional arguments:
   --conf-file [_CONF_FILE]
                         Define configuration file Ex. REQUEST-901-INITIALIZATION.conf                                                                 
 ```
+
+-
+-
+-
+-
+-
+-
+-
+
 ### Demos 
 You can try `wafparan01d3.py` by running the VM environment (Ubuntu) that deploys WAF ModSecurity & 'Mock' using latest OWASP Core Rule Set `CRS 3.3.2` evaluating ModSecurity paranoia levels easyble customizable. 
 
@@ -365,7 +374,9 @@ $ cd wafparan01d3
 $ sudo python3 wafparan01d3.py --help 
 ```
 
-Gifs images here 
+```
+```
+
 
 ### Authors
 Alex Hernandez aka <em><a href="https://twitter.com/_alt3kx_" rel="nofollow">(@\_alt3kx\_)</a></em></br>
