@@ -321,8 +321,7 @@ For help you can make use of the `help` option. The basic usage is to pass difer
 Example: </br>
 
 ```
-$ sudo -i 
-# python3 wafparan01d3.py -h 
+$ sudo python3 wafparan01d3.py -h 
 
            (                                  )   ) (       )  
  (  (      ))\ )          ) (      )        ( /(( /( )\ ) ( /(  
