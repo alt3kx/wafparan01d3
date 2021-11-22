@@ -132,7 +132,6 @@ $ sudo mv coreruleset-3.3.2/rules/ /etc/modsecurity/crs/
 ```
 $ sudo vim /etc/apache2/mods-enabled/security2.conf
 ```
-
 ```    
 <IfModule security2_module>
         # Default Debian dir for modsecurity's persistent data
